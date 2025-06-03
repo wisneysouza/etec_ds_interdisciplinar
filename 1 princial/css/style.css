@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    min-height:15vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #d9ae53;
+    padding: 2vh;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: solid #d9ae53;
+    background-color: #050404;
+    padding: 2vh;
+}
+.logoescudo{
+    width: 8vw;
+    height: auto;
+    }
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.5vh;
+}
+.mundial {
+    color: white; /* Ajuste da cor para branco */
+    font-size: 2rem;
+}
+
+nav {
+    width: 95%;
+    height: 7vh;
+    padding: 3vh 7vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    border:solid #d9ae53;
+    background-color: #050404;
+    }
+
+ul {
+    display: flex;
+    width: 98%;
+    padding: 1vh;
+    justify-content: space-between;
+    list-style: none;
+    flex-direction:row;
+    gap: 4vw;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+li img{/*ajusta o tamanho das imagens */
+    width: 2vw;
+    height: auto;
+    margin-right: 0.5vw;
+}
+a{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+nav ul li a {
+    text-decoration: none;/* Remove sublinhado */
+    color:#d9ae53;
+    transition: color 0.3s ease-in-out;} /* Efeito suave */
+
+nav ul li a:hover {
+    color: #e8be50; /* Cor ao passar o mouse */
+}
