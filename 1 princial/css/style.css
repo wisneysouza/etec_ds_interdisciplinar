@@ -34,7 +34,7 @@ header{
     left: 22%;
     }
 .logoescudo{
-    width: 8vw;
+    width: 7vw;
     height: auto;
     display: flex;
     justify-content: center;
@@ -159,7 +159,7 @@ section p{
 .formato img{
     position: absolute;
     left: 15.5%;
-    top:64.5%;
+    top:63%;
 }
 .baloes{
     display: flex;
