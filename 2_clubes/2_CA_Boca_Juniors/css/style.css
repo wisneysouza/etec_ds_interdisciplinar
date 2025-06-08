@@ -1,118 +1,335 @@
 @import url('https://fonts.cdnfonts.com/css/montserrat');
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 body{
     background-color: #141414 !important;
+    color: #ffffff;
 }
+.espacamento{
+    margin: 30px;
+}
+main{margin: 30px;}
+
 header{
-    width: 100%;
-    min-height:15vh ;
+    border: solid #d9ae53;
+    background-color: #050404;
+    text-align: center;
+    padding: 5px; 
+}
+
+.header-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #d9ae53;    
+    
 }
 
 .logo{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    border: solid #d9ae53;
-    background-color: #050404;
-    padding: 2vh;
-    font-size: 2.5rem;
+    flex-wrap: wrap;
     margin-bottom: 0.5vh;
 }
-.logo img{
-    position: absolute;
-    left: 22%;
-    }
+
 .logoescudo{
-    width: 8vw;
+    width: 7vw;
     height: auto;
-    display: flex;
-    justify-content: center;
-    }
+    margin-right: 10px;
+}
+
 .titulo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: #d9ae53;
 }
 
 .mundial {
-    color: white; /* Ajuste da cor para branco */
+    color: #ffffff; /* Ajuste da cor para branco */
     font-size: 2rem;
 }
-img{
-    width: 4vh;
-    height: auto;
-}
+
 nav {
-    width: 97%;
-    height: 7vh;
-    margin-top: 1%;
-    padding: 3vh 7vw;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 0.8rem;
-    border-radius: 8px;
-    border:solid #d9ae53;
+    
+    margin: 1% auto;
+    border: solid #d9ae53;
     background-color: #050404;
+    border-radius: 8px;
+    padding: 15px 0;
     }
 
-ul {
+nav ul {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     list-style: none;
-    flex-direction:row;
+    flex-direction: row;
     gap: 4vw;
 }
-li{
+
+nav ul li{
     display: flex;
     align-items: center;
 }
-a{
+
+nav ul li img{
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
+nav ul li a{
     font-size: 1.3rem;
     font-weight: bold;
+    text-decoration: none;
+    color: #d9ae53;
+    transition: color 0.3s ease-in-out;
 }
-nav ul li a {
-    text-decoration: none;/* Remove sublinhado */
+
+nav ul li a:hover{
+    color:#f3b229 ;
+}
+
+section{
+    height: auto;
+    margin: 1% auto;
+    border-radius: 8px;
+    border:solid #d9ae53;
+    background-color: #050404;
     color:#d9ae53;
-    transition: color 0.3s ease-in-out;} /* Efeito suave */
-
-nav ul li a:hover {
-    color: #f3b229; /* Cor ao passar o mouse */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+section p{
+    width: 90%;
+    color: #ffffff;
+}
+.inicio{
+    height: auto;
+    margin: 1% auto;
+    border-radius: 8px;
+    border:solid #d9ae53;
+    background-color: #050404;
+    color:#d9ae53;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    
 }
 
+.inicio p{
+    width: 90%;
+    color: #ffffff;
+}
 
+.janelas{
+    margin-top: 1% ;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    }
 
-footer{
+.formato, .prestigio{
+    width: 49.3%;
+    height: auto;
+    border-radius: 8px;
+    border:solid #d9ae53;
+    background-color: #050404;
+    color:#d9ae53;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    min-height: 27vh;
+    }
+
+.formato p, .prestigio p{
+        color: #ffffff;
+        width: 90%;
+    }
+.formato img, .prestigio img, .historia img{
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px ;
+    position: static;
+    left: auto;
+    top:auto;
+}
+.formato-titulo, .prestigio-titulo, .historia-titulo{
+    display: flex;
+    flex-direction: row;
+}
+.baloes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    gap: 10px;
     width: 100%;
-    height: 12vh;
+}
+.balao1, .balao2{
+    width: 42%;
+    background-color: #141414;
+    border: solid #d9ae53;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.historia{
+    height: auto;
+    margin: 1% auto;
+    border-radius: 8px;
     border:solid #d9ae53;
     background-color: #050404;
     color:#d9ae53;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 2vh;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
 }
-footer img{
-    width: 2vw;
-    height: 4vh;
-    position: absolute;
-    left: 35%;
-    top:126%; 
+.historia p{
+    color: #ffffff;
+    width: 90%;
 }
+
+footer{
+    width: 100%;
+    height: auto;
+    color: #d9ae53;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vh;
+    margin-top: 1%;
+    align-items: center;
+    border: solid #d9ae53;
+    background-color: #050404;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.footer-trofeu{
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 footer p{
     color: #ffffff;
+    text-align: center;
+}
+
+/*Responsividade*/
+
+@media(max-width: 768px){
+    .header-content{
+        flex-direction: column;
+    }
+    .logoescudo{
+        width: 15vw;
+    }
+    header h1{
+        font-size: 1.8rem;
+    }
+    .formato, .prestigio{
+        width: 45%;
+    }
+    .mundial{
+        font-size: 1.5rem;
+    }
+    nav{
+        height: auto;
+        padding: 10px 0;    
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .janelas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formato, .prestigio, .historia{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+}
+@media(max-width: 1489px ){
+    .header-content{
+        flex-direction: column;
+    }
+    .logoescudo{
+        width: 15vw;
+    }
+    header h1{
+        font-size: 1.8rem;
+    }
+    .formato, .prestigio{
+        width: 45%;
+    }
+    .mundial{
+        font-size: 1.5rem;
+    }
+    nav{
+        height: auto;
+        padding: 10px 0;    
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .janelas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formato, .prestigio, .historia{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .balao1, .balao2{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+
 }

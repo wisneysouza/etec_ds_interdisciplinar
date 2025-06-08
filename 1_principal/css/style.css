@@ -305,5 +305,31 @@ footer p{
     .formato, .prestigio{
         width: 45%;
     }
+    .mundial{
+        font-size: 1.5rem;
+    }
+    nav{
+        height: auto;
+        padding: 10px 0;    
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .janelas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formato, .prestigio, .historia{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .balao1, .balao2{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
 
 }
