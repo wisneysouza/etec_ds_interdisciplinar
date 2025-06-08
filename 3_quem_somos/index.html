@@ -9,21 +9,7 @@
     <script src="./css/style.css"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="./img/Logo_sem_texto_&_fundo.png" alt="logo do FDS"/>
-            <h1>Football Developers Society</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><img src="./img/globo.png" alt="icone do globo"><a href="./index.html">Inicial</a></li>
-                <li><img src="./img/trofeu.png" alt="icone do trofeu"><a href="../2 clubes/index.html">Clubes</a></li>
-                <li><img src="./img/bonecos.png" alt="icone do boneco"><a href="../6 quem somos/index.html">Quem Somos</a></li>
-                <li><img src="./img/formulario.png" alt="icone do formulario"><a href="../7 forms/index.html">Formulários</a></li>
-                <li><img src="./img/folha.png" alt="icone da folha"><a href="../8 etica/index.html">Ética & Sustentabilidade</a></li>
-            </ul>
-    </nav>
-</header>
+    <div id="header"></div>
 <main>
     <h1>Nossa Equipe em Campo</h1>
 <p>Conheça os integrantes desta equipe que está explorando o Mundial de Clubes</p>
@@ -68,5 +54,13 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 <script src="./js/inicio.js"></script> 
+<script>
+    // Usando fetch() para importar o header.html
+    fetch('../header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('header').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

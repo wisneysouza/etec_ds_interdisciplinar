@@ -10,6 +10,13 @@ body{
     background-color: #141414 !important;
     color: #ffffff;
 }
+main{
+    margin: 30px;
+}
+
+.espacamento{
+    margin: 30px;
+}
 
 header{
     border: solid #d9ae53;
@@ -59,7 +66,6 @@ header h1{
 }
 
 nav {
-    width: 97%;
     margin: 1% auto;
     border: solid #d9ae53;
     background-color: #050404;
@@ -109,7 +115,6 @@ nav ul li a:hover{
 }
 
 .mergulho{
-    width: 97%;
     height: 19vh;
     display: flex;
     justify-content: center;
@@ -212,7 +217,6 @@ nav ul li a:hover{
 }
 
 .encontrar{
-    width: 97%;
     height: auto;
     color:#ffffff;
     display: flex;
@@ -284,6 +288,54 @@ footer p{
 
 /*Responsividade*/
 @media(max-width: 768px){
+    .header-content{
+        flex-direction: column;
+    }
+    .logoescudo {
+        width: 15vw;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .mundial {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        height: auto;
+        padding: 2vh 5vw;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .times {
+        flex-direction: column;
+    }
+
+    .club-card {
+        width: 90%;
+    }
+
+    .encontrar-itens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encontrar-item {
+        margin: 15px 0;
+    }
+
+    .footer-trofeu {
+        width: 10vw;
+    }
+}
+
+@media(max-width: 1489px){
     .header-content{
         flex-direction: column;
     }

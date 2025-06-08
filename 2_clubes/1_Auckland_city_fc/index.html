@@ -80,11 +80,11 @@
 <script src="./js/inicio.js"></script> 
 <script>
     // Usando fetch() para importar o header.html
-    fetch('../')
-      .then(response => response.text())
-      .then(data => {
+    fetch('../header.html')
+        .then(response => response.text())
+        .then(data => {
         document.getElementById('header').innerHTML = data;
-      });
-  </script>
+        });
+    </script>
 </body>
 </html>
