@@ -15,7 +15,7 @@ body{
 main{margin: 30px;}
 
 header{
-    border: solid #d9ae53;
+    border: solid #003B5C;
     background-color: #050404;
     text-align: center;
     padding: 5px; 
@@ -52,7 +52,7 @@ header{
 
 header h1{
     font-size: 2.5rem;
-    color: #d9ae53;
+    color: #003B5C;
 }
 
 .mundial {
@@ -63,7 +63,7 @@ header h1{
 nav {
     
     margin: 1% auto;
-    border: solid #d9ae53;
+    border: solid #003B5C;
     background-color: #050404;
     border-radius: 8px;
     padding: 15px 0;
@@ -93,125 +93,101 @@ nav ul li a{
     font-size: 1.3rem;
     font-weight: bold;
     text-decoration: none;
-    color: #d9ae53;
+    color: #003B5C;
     transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover{
     color:#f3b229 ;
 }
+.inicio_auckland{
+    width: 100%;
+    border: #003B5C solid;
+    background-color: #050404;
+    border-radius: 8px;
+    color: #003B5C;
+    margin-top: 1%;
+}
 
-section{
-    height: auto;
-    margin: 1% auto;
+.inicio_auckland button{
+    color: #003B5C;
+    background-color: #141414;
+    border: solid #003B5C; 
     border-radius: 8px;
-    border:solid #d9ae53;
-    background-color: #050404;
-    color:#d9ae53;
+    padding: 10px 20px;
+    margin: 30px;;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
+    text-decoration: none;
 }
-section p{
-    width: 90%;
-    color: #ffffff;
+.inicio_auckland img{
+width: 25px;
+height: 25px;
 }
-.inicio{
-    height: auto;
-    margin: 1% auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
-    background-color: #050404;
-    color:#d9ae53;
+.alinhar_icones{
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
+    flex-direction: row;
     
 }
 
-.inicio p{
+.inicio_auckland p{
     width: 90%;
     color: #ffffff;
 }
-
-.janelas{
-    margin-top: 1% ;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-    }
-
-.formato, .prestigio{
-    width: 49.3%;
+.jogadores{
+    width: 100%;
     height: auto;
+    margin: 1% auto;
     border-radius: 8px;
-    border:solid #d9ae53;
+    border:solid #003B5C;
     background-color: #050404;
-    color:#d9ae53;
+    color:#ffffff;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 15px;
-    position: relative;
-    min-height: 27vh;
-    }
+}   
 
-.formato p, .prestigio p{
-        color: #ffffff;
-        width: 90%;
-    }
-.formato img, .prestigio img, .historia img{
-    width: 40px;
-    height: auto;
-    margin-bottom: 10px ;
-    position: static;
-    left: auto;
-    top:auto;
-}
-.formato-titulo, .prestigio-titulo, .historia-titulo{
-    display: flex;
-    flex-direction: row;
-}
-.baloes{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: none;
-    justify-content: center;
-    gap: 10px;
+.conquistas{
     width: 100%;
-}
-.balao1, .balao2{
-    width: 42%;
-    background-color: #141414;
-    border: solid #d9ae53;
+    height: auto;
+    margin: 1% auto;
     border-radius: 8px;
-    text-align: center;
-    font-size: 20px;
+    border:solid #003B5C;
+    background-color: #050404;
+    color:#ffffff;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding-top: 15px;
+    text-align: center;
+    padding: 15px;
+}   
+
+.curiosidades{
+    width: 100%;
+    height: auto;
+    margin: 1% auto;
+    border-radius: 8px;
+    border:solid #003B5C;
+    background-color: #050404;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
 }
 
 .historia{
     height: auto;
     margin: 1% auto;
     border-radius: 8px;
-    border:solid #d9ae53;
+    border:solid #003B5C;
     background-color: #050404;
-    color:#d9ae53;
+    color:#003B5C;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -223,18 +199,28 @@ section p{
     color: #ffffff;
     width: 90%;
 }
-
+.galeria{
+    margin: 1% auto;
+    border-radius: 8px;
+    border:solid #003B5C;
+    background-color: #050404;
+    color:#003B5C;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+}
 footer{
     width: 100%;
     height: auto;
-    color: #d9ae53;
+    color: #003B5C;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 1vh;
     margin-top: 1%;
     align-items: center;
-    border: solid #d9ae53;
+    border: solid #003B5C;
     background-color: #050404;
 }
 
