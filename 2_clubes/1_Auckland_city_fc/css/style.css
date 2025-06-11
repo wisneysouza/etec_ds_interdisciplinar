@@ -135,9 +135,8 @@ nav ul li a:hover{
 .button_h1{
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
     padding: 0px;
-    
 }
 .escudo_auckland{
     width: 200px;
