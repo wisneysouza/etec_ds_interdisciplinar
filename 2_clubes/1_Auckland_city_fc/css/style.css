@@ -108,50 +108,92 @@ nav ul li a:hover{
     color: #003B5C;
     margin-top: 1%;
 }
-
+.inicio_auckland p{
+    width: 90%;
+    color: #ffffff;
+}
 .inicio_auckland button{
     color: #003B5C;
     background-color: #141414;
     border: solid #003B5C; 
     border-radius: 8px;
     padding: 10px 20px;
-    margin: 30px;;
+    margin: 10px;
     display: flex;
-    text-decoration: none;
+    justify-content: center;    
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    gap: 10px;
+    cursor: pointer;
+    ;
 }
-.inicio_auckland img{
-width: 25px;
-height: 25px;
+.inicio_auckland button:hover{
+    background-color: #ffffff;
+    color: #050404;
+}
+.button_h1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+    padding: 0px;
+    
+}
+.escudo_auckland{
+    width: 200px;
+    height: 200px;    
+}
+
+.titulo_auckland{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: aquamarine;
+}
+.titulo_auckland h1{
+    font-size: 2.5rem;
+    color: #ffffff;
 }
 .alinhar_icones{
     display: flex;
     flex-direction: row;
-    
+    align-items: center;;
+    gap: 10px;
+    background-color: aqua;
+    ;
 }
 
-.inicio_auckland p{
-    width: 90%;
-    color: #ffffff;
+.alinhar_icones img{
+width: 30px;
+height: 30px;
 }
+
+.imagens{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 .jogadores{
-    width: 100%;
-    height: auto;
-    margin: 1% auto;
     border-radius: 8px;
     border:solid #003B5C;
     background-color: #050404;
-    color:#ffffff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
+    color: #ffffff;
 }   
+.jogadores img{
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+.historia img h2{
+    display: flex;
+    flex-direction: row;
+}
 
 .conquistas{
-    width: 100%;
-    height: auto;
     margin: 1% auto;
     border-radius: 8px;
     border:solid #003B5C;
@@ -162,12 +204,10 @@ height: 25px;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 15px;;
 }   
 
 .curiosidades{
-    width: 100%;
-    height: auto;
     margin: 1% auto;
     border-radius: 8px;
     border:solid #003B5C;
@@ -182,11 +222,10 @@ height: 25px;
 }
 
 .historia{
-    height: auto;
     margin: 1% auto;
     border-radius: 8px;
     border:solid #003B5C;
-    background-color: #050404;
+    background-color: rgb(54, 24, 24);
     color:#003B5C;
     display: flex;
     justify-content: center;
