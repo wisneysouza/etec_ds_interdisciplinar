@@ -11,57 +11,82 @@
 <body>
     <div id="header"></div>
 <main>
+    <section>
     <h1>Nossa Equipe em Campo</h1>
-<p>Conheça os integrantes desta equipe que está explorando o Mundial de Clubes</p>
-<article>
-    <div class="felipe">
-        <img src="" alt=""/>
-        <h2>História da Competição</h2>
-        <p>Criado em 2000, o Mundial de Clubes reúne os melhores clubes de cada continente em uma competição única que coroa o verdadeiro campeão mundial.</p>
-    </div>
-    <div class="luana">
-        <img src="" alt=""/>
-    <h2>Formato Global</h2>
-    <p>A partir de 2025, a competição será expandida para 32 clubes, representando todas as confederações continentais da FIFA.</p>
-    </div>
-    <div class="matheus">
-        <img src="" alt=""/>
-        <h2>Prestígio Mundial</h2>
-        <p>O título de campeão mundial de clubes é considerado um dos mais prestigiosos do futebol, reunindo as maiores estrelas do esporte.</p>
-    </div>
-</article>
-<article>
-    <div class="roger">
-        <img src="" alt=""/>
-        <h2>História da Competição</h2>
-        <p>Criado em 2000, o Mundial de Clubes reúne os melhores clubes de cada continente em uma competição única que coroa o verdadeiro campeão mundial.</p>
-    </div>
-    <div class="wisney">
-        <img src="" alt=""/>
-    <h2>Formato Global</h2>
-    <p>A partir de 2025, a competição será expandida para 32 clubes, representando todas as confederações continentais da FIFA.</p>
+    <p>
+        Conheça os integrantes desta equipe que está explorando o Mundial de Clubes
+    </p>
+    </section>
+    <div class="integrantes1">
+    <article class="integrantes">
+    <div class="membros">
+        <img src="img/Felipe.jpg" alt="Imagem do integrante Felipe"/>
+        <h2>Felipe Maria</h2>
+        <p onclick="abrirCurriculo('felipe')">Visualizar Curriculum Vitae</p>
+        </div>
+        </article>
+
+    <article class="integrantes">
+    <div class="membros">
+        <img src="img/Luana.jpg" alt="Imagem da integrante Luana"/>
+        <h2>Luana Gerbelli</h2>
+        <p onclick="abrirCurriculo('luana')">Visualizar Curriculum Vitae</p>
+        </div>
+        </article>
+
+    <article class="integrantes">
+    <div class="membros">
+        <img src="img/Matheus.jpg" alt="Imagem do integrante Matheus"/>
+        <h2>Matheus Trindade</h2>
+        <p onclick="abrirCurriculo('matheus')">Visualizar Curriculum Vitae</p>
     </div>
     </article>
-    <section>
-    <h2>Sobre o Projeto</h2>
-    <p>Somos estudantes apaixonados por futebol que se uniram para criar este projeto educativo sobre o Mundial de Clubes da FIFA. Nosso objetivo é compartilhar conhecimento, despertar interesse pela história do futebol e criar uma plataforma interativa para todos os amantes do esporte.</p>
-    </section>
+    </div>
+
+    <div class="integrantes2">
+        <div class="space"></div>
+    <article class="integrantes">
+    <div class="membros">
+        <img src="img/Roger.jpg" alt="Imagem do integrante Roger"/>
+        <h2>Roger Ferreira</h2>
+        <p onclick="abrirCurriculo('roger')">Visualizar Curriculum Vitae</p>
+    </div>
+    </article>
+
+    <article class="integrantes">
+    <div class="membros">
+        <img src="img/Wisney.jpg" alt="Imagem do integrante Wisney"/>
+    <h2>Wisney Souza</h2>
+    <p onclick="abrirCurriculo('wisney')">Visualizar Curriculum Vitae</p>
+    </div>
+    </article>
+    <div class="space"></div>
+    </div>
+    
     </main>
     <div id="footer"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="./js/inicio.js"></script> 
     <script>
-    // Usando fetch() para importar o header.html
-    fetch('../header.html')
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById('header').innerHTML = data;
-        });
-    fetch('../footer.html')
-            .then(response => response.text())
-            .then(data => {
-            document.getElementById('footer').innerHTML = data;
-        });
+    function abrirCurriculo(nome){
+        switch(nome){
+            case "luana":
+                window.location.href="./img/curriculo_luana.pdf"
+            break;
+            case "roger":
+                window.location.href="./img/curriculo_roger.pdf"
+            break;
+            case "felipe":
+                window.location.href="./img/curriculo_felipe.pdf"
+            break;
+            case "wisney":
+                window.location.href="./img/curriculo_wisney.pdf"
+            break;
+            case "matheus":
+                window.location.href="./img/curriculo_matheus.pdf"
+            break;
+        }
+    }
         </script>
 </body>
 </html>

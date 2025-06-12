@@ -36,8 +36,8 @@ header{
 }
 
 .logoescudo{
-    width: 7vw;
-    height: auto;
+    width: 5vw; /*5 de vw a logo não aumenta a caixa*/
+    height: 5vw; /*5 de vw a logo não aumenta a caixa*/
     margin-right: 10px;
 }
 
@@ -105,7 +105,7 @@ section{
     height: auto;
     margin: 1% auto;
     border-radius: 8px;
-    border:solid #d9ae53;
+    border:solid #e8be50;
     background-color: #050404;
     color:#d9ae53;
     display: flex;
@@ -119,110 +119,7 @@ section p{
     width: 90%;
     color: #ffffff;
 }
-.inicio{
-    height: auto;
-    margin: 1% auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
-    background-color: #050404;
-    color:#d9ae53;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-    
-}
 
-.inicio p{
-    width: 90%;
-    color: #ffffff;
-}
-
-.janelas{
-    margin-top: 1% ;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-    }
-
-.formato, .prestigio{
-    width: 49.3%;
-    height: auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
-    background-color: #050404;
-    color:#d9ae53;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    min-height: 27vh;
-    }
-
-.formato p, .prestigio p{
-        color: #ffffff;
-        width: 90%;
-    }
-.formato img, .prestigio img, .historia img{
-    width: 40px;
-    height: auto;
-    margin-bottom: 10px ;
-    position: static;
-    left: auto;
-    top:auto;
-}
-.formato-titulo, .prestigio-titulo, .historia-titulo{
-    display: flex;
-    flex-direction: row;
-}
-.baloes{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: none;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-}
-.balao1, .balao2{
-    width: 42%;
-    background-color: #141414;
-    border: solid #d9ae53;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-}
-
-.historia{
-    height: auto;
-    margin: 1% auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
-    background-color: #050404;
-    color:#d9ae53;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-}
-.historia p{
-    color: #ffffff;
-    width: 90%;
-}
 
 footer{
     width: 100%;
@@ -254,6 +151,52 @@ footer p{
     text-align: center;
 }
 
+.integrantes{
+    width: 600px;
+    margin: 1% auto;
+    border-radius: 8px;
+    border:solid #d9ae53;
+    background-color: #050404;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.integrantes p{
+    width: 525px;
+    margin: 1% auto;
+    border-radius: 8px;
+    border:solid #d9ae53;
+    background-color: #050404;
+    color:#ffffff;
+    text-align: center;
+    padding: 8px;
+}
+
+.integrantes p:hover{
+    cursor: pointer;
+    background-color: #e8be50;
+}
+
+.integrantes1, .integrantes2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.space {
+    width: 300px;
+}
+
+.membros img {
+    width: 150px;
+    height: auto;
+    margin-right: 5px;
+    border-radius: 50px;
+}
 /*Responsividade*/
 
 @media(max-width: 768px){
@@ -265,9 +208,6 @@ footer p{
     }
     header h1{
         font-size: 1.8rem;
-    }
-    .formato, .prestigio{
-        width: 45%;
     }
     .mundial{
         font-size: 1.5rem;
@@ -281,15 +221,28 @@ footer p{
         align-items: center;
         gap: 10px;
     }
-    .janelas{
+    
+    .integrantes1, .integrantes2 {
         flex-direction: column;
         align-items: center;
     }
 
-    .formato, .prestigio, .historia{
-        width: 90%;
-        margin-bottom: 20px;
+    .space {
+        display: none;
     }
+
+    .integrantes {
+        width: 90%;
+    }
+
+    .integrantes p {
+        width: 90%;
+    }
+
+    .membros img {
+        width: 120px;
+    }
+
 
 }
 @media(max-width: 1489px ){
@@ -331,5 +284,80 @@ footer p{
         margin-bottom: 10px;
     }
 
+    .space {
+        display: nome;
+        width: 180px;
+    }
 
+    .integrantes {
+        width: 32%;
+    }
+
+    .integrantes p {
+        width: 90%;
+    }
+
+    .membros img {
+        width: 120px;
+    }
+}
+
+@media(max-width: 480px){
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .mundial {
+        font-size: 1.2rem;
+    }
+
+    .logoescudo {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .integrantes {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .integrantes p {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    .membros img {
+        width: 100px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    section p{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 1024px){
+    .integrantes1, .integrantes2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .space {
+        display: none;
+    }
+
+    .integrantes {
+        width: 90%;
+    }
+
+    .integrantes p {
+        width: 90%;
+    }
+
+    .membros img {
+        width: 120px;
+    }
 }
