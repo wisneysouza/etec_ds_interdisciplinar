@@ -99,7 +99,7 @@ nav ul li a:hover{
     color:#f3b229 ;
 }
 
-.mergulho, .times, .encontrar {
+.mergulho, .encontrar {
     border: solid #d9ae53;
     background-color: #050404;
     text-align: center;
@@ -134,7 +134,7 @@ nav ul li a:hover{
     width: 99%;
 }
 .club-card{
-    width: 48%;
+    width: 47.5%;
     border: solid #d9ae53;
     border-radius: 8px;
     background-color: #050404;
