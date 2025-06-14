@@ -150,17 +150,28 @@ nav ul li a:hover{
     justify-content: space-between;
     padding: 0px;
 }
+
+.escudo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2vh 0;
+}
 .escudo_auckland{
     width: 10vw;
     height: auto;
-    background-color: #f7d100;
 }
 
 .titulo_auckland{
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: aquamarine;
+        background-color: aquamarine;
+}
+.nome_diretia{
+    margin-left: auto;
+    padding: 0.5vh 1vw;
 }
 .titulo_auckland h1{
     font-size: 2.5rem;
@@ -171,7 +182,6 @@ nav ul li a:hover{
     flex-direction: row;
     align-items: center;
     gap: 0.5vh;
-    background-color: aqua;
     ;
 }
 
@@ -235,7 +245,15 @@ height: 1.8vw;
     align-items: left;
     text-align: left;
     padding: 1.5vh;;
-}   
+} 
+
+.conquistas p{
+    margin-left: 2vw;
+    font-size: 1.5rem;
+}
+.conquistas h5{
+    font-size: 1.5rem;
+}
 
 .curiosidades{
     margin: 1% auto;
@@ -249,6 +267,9 @@ height: 1.8vw;
     align-items: left;
     text-align: left;
     padding: 1.5vh;
+}
+.curiosidades p{
+    font-size: 1.5rem;
 }
 
 .historia{
