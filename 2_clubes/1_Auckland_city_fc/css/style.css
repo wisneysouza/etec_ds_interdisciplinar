@@ -61,12 +61,13 @@ header h1{
 }
 
 nav {
-    
+    width: 100%;
     margin: 1% auto;
     border: solid #003B5C;
     background-color: #050404;
     border-radius: 0.8vw;
     padding: 1.5vh 0;
+    overflow: hidden;
     }
 
 nav ul {
@@ -76,11 +77,14 @@ nav ul {
     list-style: none;
     flex-direction: row;
     gap: 4vw;
+    flex-wrap: wrap;
+    padding: 0 2vw;
 }
 
 nav ul li{
     display: flex;
     align-items: center;
+    
 }
 
 nav ul li img{
@@ -95,6 +99,8 @@ nav ul li a{
     text-decoration: none;
     color: #003B5C;
     transition: color 0.3s ease-in-out;
+    white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden; /* Impede que o texto transborde */
 }
 
 nav ul li a:hover{
@@ -114,6 +120,21 @@ nav ul li a:hover{
     width: 90%;
     color: #ffffff;
 }
+
+.button_h1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    width: 100%;
+}
+
+.button_h1 a{
+    text-decoration: none;
+    color: #003B5C;
+    font-weight: bold;
+}
+
 .inicio_auckland button{
     color: #003B5C;
     background-color: #141414;
@@ -133,36 +154,11 @@ nav ul li a:hover{
     background-color: #f7d100;
     color: #003B5C;
 }
-.button_h1 a{
-    text-decoration: none;
-    color: #003B5C;
-    font-weight: bold;
-}
-
 
 .seta{
     width: 2vw;
     height: auto;
     margin-right: 1vw;
-}
-.button_h1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px;
-    width: 100%;
-}
-
-.escudo_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 2vh 0;
-}
-.escudo_auckland{
-    width: 10vw;
-    height: auto;
 }
 
 .titulo_auckland{
@@ -180,6 +176,26 @@ nav ul li a:hover{
     color: #ffffff;
     margin: 0;
 }
+
+.escudo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2vh 0;
+}
+.escudo_auckland{
+    width: 10vw;
+    height: auto;
+}
+
+.imagens{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 2vh;
+}
+
 .alinhar_icones{
     display: flex;
     flex-direction: row;
@@ -191,12 +207,6 @@ nav ul li a:hover{
 .alinhar_icones img{
 width: 1.8vw;
 height: 1.8vw;
-}
-
-.imagens{
-    display: flex;
-    justify-content: center;
-    gap: 5vw;
 }
 
 .jogadores{
@@ -337,7 +347,7 @@ height: 1.8vw;
 
 .img_galeria1, .img_galeria2, .img_galeria3{
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     border-radius: 0.8vw;
     display: flex;
     flex-direction: row;
@@ -351,7 +361,7 @@ height: 1.8vw;
     height: 35vh;
     object-fit:fill;
     object-position: center;
-    /* border: #f7d100 solid 0.1vw;*/
+    box-shadow: #f7d100 0.1vw 0.1vw 0.5vw 0.05vw;
 }
 footer{
     width: 100%;
@@ -384,75 +394,128 @@ footer p{
     font-size: 1.5rem;
 }
 
-/*Responsividade*/
-
-@media(max-width: 768px){
-    .header-content{
-        flex-direction: column;
-    }
-    .logoescudo{
-        width: 15vw;
-    }
-    header h1{
-        font-size: 1.8rem;
-    }
-    .formato, .prestigio{
-        width: 45%;
-    }
-    .mundial{
+/* Responsividade */
+/* Telas pequenas (smartphones) */
+@media (max-width: 576px) {
+    .inicio_auckland button {
+        width: 40vw;
         font-size: 1.5rem;
     }
-    nav{
-        height: auto;
-        padding: 1vh 0; 
+    
+    .titulo_auckland h1 {
+        font-size: 1.8rem;
     }
-    nav ul{
-        flex-direction: column;
-        align-items: center;
-        gap: 1vh; 
+    
+    .escudo_auckland {
+        width: 30vw;
     }
-    .janelas{
-        flex-direction: column;
-        align-items: center;
+    
+    .alinhar_icones img {
+        width: 4vw;
+        height: 4vw;
     }
+    
+    .jogador_info h5 {
+        font-size: 1.5rem;
+    }
+    
+    .jogador_info .posicao, 
+    .jogador_info .periodo,
+    .jogador_descricao p {
+        font-size: 1.2rem;
+    }
+    
+    .historia p,
+    .conquistas p,
+    .curiosidades p {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    
+    .img_galeria1 img, 
+    .img_galeria2 img, 
+    .img_galeria3 img {
+        height: 25vh;
+    }
+}
 
-    .formato, .prestigio, .historia{
-        width: 90%;
-        margin-bottom: 2vh; 
-    }
-    
-    
+/* Telas médias (tablets) */
+@media (max-width: 768px) {
     .button_h1 {
         flex-direction: column; 
         align-items: center;
     }
     
+    .nome_direita {
+        margin: 1vh 0;
+        width: 100%;
+        text-align: center;
+    }
+    
     .escudo_auckland {
-        width: 25vw; 
-        margin-top: 1vh; 
+        width: 25vw;
     }
     
     .imagens {
-        flex-direction: column; 
-        gap: 1.5vh; 
+        flex-direction: column;
+        gap: 1.5vh;
     }
     
-    
-    .img_galeria1, .img_galeria2, .img_galeria3 {
-        flex-direction: column; 
-        align-items: center;
+    .jogador_container {
+        flex-direction: column;
     }
     
-    .img_galeria1 img, .img_galeria2 img, .img_galeria3 img {
-        width: 80%; 
-        margin-bottom: 1vh; 
+    .jogador_info, 
+    .jogador_descricao {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 1vh;
+    }
+    
+    .img_galeria1, 
+    .img_galeria2, 
+    .img_galeria3 {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .img_galeria1 img, 
+    .img_galeria2 img, 
+    .img_galeria3 img {
+        width: 100%;
+        margin-bottom: 1vh;
     }
 }
 
-@media(max-width: 1489px){
+/* Telas grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .escudo_auckland {
+        width: 8vw;
+    }
     
-    .balao1, .balao2{
-        width: 100%;
-        margin-bottom: 1vh; 
+    .jogador_info {
+        width: 25%;
+    }
+    
+    .jogador_descricao {
+        width: 75%;
+    }
+}
+
+/* Telas extra grandes */
+@media (min-width: 1201px) {
+    main {
+        margin: 3vh auto;
+        max-width: 1400px;
+    }
+    
+    .escudo_auckland {
+        width: 7vw;
+    }
+    
+    .img_galeria1 img, 
+    .img_galeria2 img, 
+    .img_galeria3 img {
+        height: 40vh;
     }
 }
