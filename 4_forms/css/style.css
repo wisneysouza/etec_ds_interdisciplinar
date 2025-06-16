@@ -61,13 +61,12 @@ header h1{
 }
 
 nav {
-    
     margin: 1% auto;
-    border: solid 1px #d9ae53;
+    border: 0.1vh solid #d9ae53;
     background-color: #050404;
-    border-radius: 0.5rem;
+    border-radius: 0.8vw;
     padding: 0.938rem 0;
-}
+    }
 
 nav ul {
     display: flex;
@@ -89,16 +88,20 @@ nav ul li img{
     margin-right: 0.313rem;
 }
 
-nav ul li a{
+nav ul li a {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
+    /* Remove sublinhado */
     color: #d9ae53;
     transition: color 0.3s ease-in-out;
 }
 
-nav ul li a:hover{
-    color:#f3b229 ;
+/* Efeito suave */
+
+nav ul li a:hover {
+    color: #f3b229;
+    /* Cor ao passar o mouse */
 }
 
 body {
@@ -124,10 +127,10 @@ body {
     background-color: #050404;
     padding: 20px;
     /* Espaçamento interno */
-    margin-bottom: 2px;
+    margin-bottom: 3vh;
     /* Espaçamento inferior */
-    margin-top: 20px;
-    /* Espaçamento inferior */
+    margin-top: 1vh;
+    /* Espaçamento superior */
 }
 
 .suavoz h1 {
@@ -148,8 +151,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 20px;
-    padding: 20px 0;
+    gap: 3vh;
 }
 
 .sugestao,
@@ -280,7 +282,7 @@ footer{
     padding: 1vh;
     margin-top: 1%;
     align-items: center;
-    border: 0.1rem solid #d9ae53;
+    border: 0.1vh solid #d9ae53;
     background-color: #050404;
 }
 
@@ -298,7 +300,6 @@ footer{
 footer h2{
     font-size: 2rem;
 }
-
 footer p{
     color: #ffffff;
     text-align: center;
