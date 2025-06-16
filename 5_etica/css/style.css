@@ -20,7 +20,7 @@ header{
     border: solid 1px #d9ae53;
     background-color: #050404;
     text-align: center;
-    padding: 0.313rem; 
+    padding: 0.313rem;
 }
 
 .header-content{
@@ -28,7 +28,6 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .logo{
@@ -62,8 +61,7 @@ header h1{
     font-size: 2rem;
 }
 
-nav {
-    
+nav{
     margin: 1% auto;
     border: solid 1px #d9ae53;
     background-color: #050404;
@@ -228,14 +226,12 @@ section{
 .box_normas li{
     text-align: center;
     font-size: 1.5rem;
-    
 }
 
 .titulo_caixa_mae_privacidade {
     width: 100%;
     text-align: left;
     align-items: flex-start;
-    
 }
 .escudo{
     width: 2.604vw;
@@ -277,7 +273,7 @@ section{
     font-size: 1.75rem;
 }
 
-.reciclagem{ 
+.reciclagem{
     width: 2.604vw;
     height: auto;
     margin-bottom: 0.625rem;
@@ -357,7 +353,6 @@ section{
     justify-content: left;
     font-size: 2rem;
 }
-
 
 footer{
     width: 100%;
@@ -482,9 +477,6 @@ h3 {
     }
 }
 
-
-
-
 @media (max-width: 768px) {
     .titulo_caixa_mae_normas,
     .titulo_caixa_mae_privacidade,
@@ -496,6 +488,13 @@ h3 {
     .box_responsabilidade {
         width: 95%;
         margin: 0.625rem auto;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    .box_normas {
+        margin: 0;
     }
 
     .finalizacao {
@@ -526,7 +525,6 @@ h3 {
     }
 }
 
-
 @media (max-width: 344px) {
     .titulo_caixa_mae_responsabilidade {
         text-align: center;
@@ -546,7 +544,6 @@ h3 {
         height: auto;
     }
 }
-
 
 @media (max-width: 1200px) {
     .caixas_conduta {
@@ -587,7 +584,6 @@ h3 {
     }
 }
 
-
 @media (min-width: 1024px) {
     .caixas_privacidade {
         flex-direction: column;
@@ -597,7 +593,7 @@ h3 {
     }
 
     .box_privacidade {
-        width: 90%; 
+        width: 95%;
         margin: auto;
         height: auto;
         text-align: center;
@@ -605,10 +601,9 @@ h3 {
     }
 }
 
-
 @media (max-width: 1023px) {
     .caixas_privacidade {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .box_privacidade {
@@ -620,7 +615,6 @@ h3 {
     }
 }
 
-
 @media (max-width: 1535px) {
     .box_privacidade {
         text-align: center;
@@ -629,13 +623,16 @@ h3 {
         width: 90%;
     }
 }
+
 @media (max-width: 768px) {
     .header-content{
         flex-direction: column;
     }
+
     .logoescudo{
         width: 15vw;
     }
+
     header h1{
         font-size: 1.8rem;
     }
@@ -667,14 +664,14 @@ h3 {
     .responsabilidade{
         flex-direction: column;
     }
-    
+
     .box_responsabilidade {
         width: 45vw;
         font-size: 1rem;
         margin: 0.625rem auto;
         text-align: left;
     }
-    
+
     .box_privacidade h2,
     .box_responsabilidade h3 {
         margin-left: 0;
@@ -689,7 +686,7 @@ h3 {
         text-align: center;
         margin: 0.625rem auto;
         padding: 0.625rem;
-        
+    
     }
 
     .alinhamento_norma,
@@ -711,9 +708,19 @@ h3 {
     .coluna_dupla {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-direction: row; /* <-- importante */
+    align-items: center;
+    flex-direction: column; /* <-- importante */
 }
+
+    .box_responsabilidade {
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    .iniciativas h2 {
+    text-align: center;
+    }
 
     .alinhamento_norma img,
     .alinhamento_privacidade img,
@@ -727,6 +734,8 @@ h3 {
     .iniciativas {
         margin-left: 0;
         text-align: center;
+        display: flex;
+        width: 40%;
     }
 
     .finalizacao h2 {
