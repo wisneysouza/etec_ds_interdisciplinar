@@ -369,7 +369,7 @@ footer{
     padding: 1vh;
     margin-top: 1%;
     align-items: center;
-    border: 0.1vh solid #d9ae53;
+    border: 0.1rem solid #d9ae53;
     background-color: #050404;
 }
 
@@ -378,16 +378,20 @@ footer{
     align-items: center;
     margin-bottom: 0.625rem;
 }
-
 .footer-trofeu{
     width: 1.5vw;
     height: auto;
     margin-bottom: 0.625rem;
 }
 
+footer h2{
+    font-size: 2rem;
+}
+
 footer p{
     color: #ffffff;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 p {
