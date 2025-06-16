@@ -415,7 +415,7 @@ footer p{
         text-align: center;
     }
     
-    .escudo_boca {
+    .escudo_bayern {
         width: 25vw;
     }
     
@@ -452,7 +452,7 @@ footer p{
 
 /* Telas grandes (desktops) */
 @media (max-width: 1024px) {
-    .escudo_boca {
+    .escudo_bayern {
         width: 8vw;
     }
     
