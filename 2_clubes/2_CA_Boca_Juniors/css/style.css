@@ -76,7 +76,7 @@ nav ul {
     justify-content: space-evenly;
     list-style: none;
     flex-direction: row;
-    gap: 4vw;
+    gap: 3vw;
     flex-wrap: wrap;
     padding: 0 2vw;
 }
@@ -119,6 +119,7 @@ nav ul li a:hover{
 .inicio_boca p{
     width: 90%;
     color: #ffffff;
+    font-size: 1.4rem;
 }
 
 .button_h1{

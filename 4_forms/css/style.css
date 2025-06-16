@@ -106,11 +106,11 @@ body {
 }
 
 .container p {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .suavoz {
-    width: 97.5%;
+    width: 100%;
     height: auto;
     color: rgb(255, 255, 255);
     display: flex;
@@ -118,7 +118,7 @@ body {
     text-align: center;
     justify-content: center;
     /* Centralizado verticalmente */
-    font-size: 0.7rem;
+    font-size: 1.5rem;
     border-radius: 8px;
     border: 0.1vh solid #e8be50;
     background-color: #050404;
@@ -138,7 +138,7 @@ body {
 }
 
 .suavoz p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     /* tamanho da fonte ajustado */
     line-height: 1.5;
     /* espaçamento entre linhas */
@@ -147,7 +147,7 @@ body {
 .formulario {
     display: flex;
     justify-content: center;
-    width: 97.5%;
+    width: 100%;
     gap: 20px;
     padding: 20px 0;
 }
@@ -193,7 +193,7 @@ body {
 .contato p {
     color: white;
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 1.5rem;
 }
 
 .sugestao_titulo h2,
@@ -227,7 +227,7 @@ body {
     border-radius: 8px;
     background-color: #050404;
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .sugestao textarea,
@@ -255,7 +255,7 @@ body {
     /* cor do texto do botão */
     border: none;
     border-radius: 4px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;

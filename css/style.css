@@ -62,7 +62,6 @@ header h1{
 }
 
 nav {
-    
     margin: 1% auto;
     border: solid 1px #d9ae53;
     background-color: #050404;
@@ -120,6 +119,11 @@ section{
 section p{
     width: 90%;
     color: #ffffff;
+    font-size: 1.5rem;
+}
+section h2{
+    font-size: 2rem;
+    color: #d9ae53;
 }
 
 .inicio{
@@ -140,6 +144,7 @@ section p{
 .inicio p{
     width: 90%;
     color: #ffffff;
+    font-size: 1.5rem;
 }
 
 .janelas{
@@ -236,6 +241,7 @@ section p{
 .historia p{
     color: #ffffff;
     width: 90%;
+    font-size: 1.5rem;
 }
 
 footer{

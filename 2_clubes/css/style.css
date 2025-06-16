@@ -128,6 +128,7 @@ nav ul li a:hover{
 .mergulho p{
     color: #ffffff;
     width: 90%;
+    font-size: 1.5rem;
 }
 
 .times{
@@ -135,7 +136,8 @@ nav ul li a:hover{
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1.5vw;  /* Alterado: 20px → 1.5vw */
-    width: 99%;
+    width: 100%;
+    margin: 3vh auto; /* Alterado: 2% auto → 2vh auto */
 }
 .club-card{
     width: 49.21%;
@@ -154,6 +156,7 @@ nav ul li a:hover{
 
 .club-card h2{
     margin-bottom: 1vh; /* Alterado: 10px → 1vh */
+    font-size: 2rem; /* Alterado: 24px → 2rem */
 }
 
 .club-card h5{
@@ -170,6 +173,7 @@ nav ul li a:hover{
     margin-bottom: 1vh; /* Alterado: 10px → 1vh */
     margin-left: 3%;
     align-self: flex-start;
+    font-size: 1.5rem;;
 }
 
 .club-info img{
@@ -181,9 +185,9 @@ nav ul li a:hover{
 .club-local{
     display: flex;
     align-items: center;
-    
     margin-right: 3%;
     align-self: flex-end;
+    font-size: 1.5rem;
 }
 
 .club-local img{
@@ -209,6 +213,7 @@ nav ul li a:hover{
     transition: background-color 0.3s ease-in-out;
     text-align: center;
     align-self: center;
+    font-size: 1.5rem; /* Alterado: 16px → 1.5rem */
     }
 .club-card button:hover{
     background-color: #d9ae53;
@@ -227,7 +232,12 @@ nav ul li a:hover{
 }
 .encontrar h2{
     color: #d9ae53;
+    font-size: 2rem;
     margin-bottom: 2vh; /* Alterado: 20px → 2vh */
+}
+
+.encontrar p{
+    font-size: 1.5rem;
 }
 
 .encontrar-itens{
@@ -235,7 +245,6 @@ nav ul li a:hover{
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    gap: 1.5vw; /* Alterado: 20px → 1.5vw */
 }
 
 .encontrar-itens img{

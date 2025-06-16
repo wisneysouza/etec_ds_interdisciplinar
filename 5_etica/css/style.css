@@ -251,17 +251,17 @@ section{
 .caixas_privacidade{
     background-color: #050404;
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    justify-content: left;
+    gap: 3vh;
 }
 
 .box_privacidade{
-    border-radius: 0.5rem;
+    border-radius: 0.5vw;
     border:0.1rem solid #d9ae53;
     background-color: #050404;
     color:#ffffff;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
 }
 
@@ -306,7 +306,7 @@ section{
 
 .box_responsabilidade {
     margin: 5% ;
-    border-radius: 0.5rem;
+    border-radius: 0.5vw;
     border:0.1rem solid #d9ae53;
     background-color: #050404;
     color:#ffffff;
@@ -339,7 +339,7 @@ section{
 
 .finalizacao {
     margin: 0.625rem;  
-    border-radius: 0.5rem;
+    border-radius: 0.5vw;
     border:0.1rem solid #d9ae53;
     background-color: #050404;
     color:#ffffff;
