@@ -10,15 +10,16 @@ body{
     color: #ffffff;
 }
 .espacamento{
-    margin: 30px;
+    margin: 1.875rem;
 }
-main{margin: 30px;}
+
+main{margin: 1.875rem;}
 
 header{
-    border: solid #d9ae53;
+    border: solid 1px #d9ae53;
     background-color: #050404;
     text-align: center;
-    padding: 5px; 
+    padding: 0.313rem; 
 }
 
 .header-content{
@@ -38,7 +39,7 @@ header{
 .logoescudo{
     width: 7vw;
     height: auto;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .titulo{
@@ -63,11 +64,11 @@ header h1{
 nav {
     
     margin: 1% auto;
-    border: solid #d9ae53;
+    border: solid 1px #d9ae53;
     background-color: #050404;
-    border-radius: 8px;
-    padding: 15px 0;
-    }
+    border-radius: 0.5rem;
+    padding: 0.938rem 0;
+}
 
 nav ul {
     display: flex;
@@ -84,13 +85,13 @@ nav ul li{
 }
 
 nav ul li img{
-    width: 30px;
+    width: 1.875rem;
     height: auto;
-    margin-right: 5px;
+    margin-right: 0.313rem;
 }
 
 nav ul li a{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
     color: #d9ae53;
@@ -104,8 +105,8 @@ nav ul li a:hover{
 section{
     height: auto;
     margin: 1% auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
+    border-radius: 0.5rem;
+    border:solid 1px #d9ae53;
     background-color: #050404;
     color:#d9ae53;
     display: flex;
@@ -113,17 +114,19 @@ section{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 0.938rem;
 }
+
 section p{
     width: 90%;
     color: #ffffff;
 }
+
 .inicio{
     height: auto;
     margin: 1% auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
+    border-radius: 0.5rem;
+    border:solid 1px #d9ae53;
     background-color: #050404;
     color:#d9ae53;
     display: flex;
@@ -131,8 +134,7 @@ section p{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 15px;
-    
+    padding: 0.938rem;
 }
 
 .inicio p{
@@ -147,69 +149,80 @@ section p{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
     }
 
 .formato, .prestigio{
     width: 49.3%;
     height: auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
+    border-radius: 0.5rem;
+    border:solid 1px #d9ae53;
     background-color: #050404;
     color:#d9ae53;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 0.938rem;
     position: relative;
     min-height: 27vh;
     }
 
-.formato p, .prestigio p{
+.formato p{
         color: #ffffff;
         width: 90%;
+        font-size: 1.5rem;
     }
+
+    .prestigio p{
+        color: #ffffff;
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
 .formato img, .prestigio img, .historia img{
-    width: 40px;
+    width: 2.5rem;
     height: auto;
-    margin-bottom: 10px ;
+    margin-bottom: 0.625rem;
     position: static;
     left: auto;
     top:auto;
 }
+
 .formato-titulo, .prestigio-titulo, .historia-titulo{
     display: flex;
     flex-direction: row;
 }
+
 .baloes{
     display: flex;
     flex-direction: row;
     align-items: center;
     border: none;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
     width: 100%;
 }
+
 .balao1, .balao2{
     width: 42%;
     background-color: #141414;
-    border: solid #d9ae53;
-    border-radius: 8px;
+    border:solid 1px #d9ae53;
+    border-radius: 0.5rem;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 0.938rem;
 }
 
 .historia{
     height: auto;
     margin: 1% auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
+    border-radius: 0.313rem;
+    border:solid 1px #d9ae53;
     background-color: #050404;
     color:#d9ae53;
     display: flex;
@@ -217,8 +230,9 @@ section p{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 0.938rem;
 }
+
 .historia p{
     color: #ffffff;
     width: 90%;
@@ -234,19 +248,20 @@ footer{
     padding: 1vh;
     margin-top: 1%;
     align-items: center;
-    border: solid #d9ae53;
+    border:solid 1px #d9ae53;
     background-color: #050404;
 }
 
 .footer-content{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
+
 .footer-trofeu{
     width: 50px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 footer p{
@@ -274,12 +289,12 @@ footer p{
     }
     nav{
         height: auto;
-        padding: 10px 0;    
+        padding: 0.625rem 0;    
     }
     nav ul{
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 0.625rem;
     }
     .janelas{
         flex-direction: column;
@@ -288,7 +303,7 @@ footer p{
 
     .formato, .prestigio, .historia{
         width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
 }
@@ -310,12 +325,12 @@ footer p{
     }
     nav{
         height: auto;
-        padding: 10px 0;    
+        padding: 0.625rem 0;    
     }
     nav ul{
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 0.625rem;
     }
     .janelas{
         flex-direction: column;
@@ -324,11 +339,11 @@ footer p{
 
     .formato, .prestigio, .historia{
         width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
     .balao1, .balao2{
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 
 

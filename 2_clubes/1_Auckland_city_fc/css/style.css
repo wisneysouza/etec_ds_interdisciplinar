@@ -185,6 +185,7 @@ nav ul li a:hover{
 .nome_direita{
     margin-left: auto;
     padding: 0.5vh 1vw;
+    text-align: center;
 }
 .titulo_auckland h1{
     font-size: 2.5rem;
@@ -376,7 +377,7 @@ height: 1.8vw;
     height: 35vh;
     object-fit:fill;
     object-position: center;
-    box-shadow: #f7d100 0.1vw 0.1vw 0.5vw 0.05vw;
+    box-shadow: #003B5C 0.1vw 0.1vw 0.5vw 0.05vw;
 }
 footer{
     width: 100%;
@@ -410,49 +411,6 @@ footer p{
 }
 
 /* Responsividade */
-/* Telas pequenas (smartphones) */
-@media (max-width: 576px) {
-    .inicio_auckland button {
-        width: 40vw;
-        font-size: 1.5rem;
-    }
-    
-    .titulo_auckland h1 {
-        font-size: 1.8rem;
-    }
-    
-    .escudo_auckland {
-        width: 30vw;
-    }
-    
-    .alinhar_icones img {
-        width: 4vw;
-        height: 4vw;
-    }
-    
-    .jogador_info h5 {
-        font-size: 1.5rem;
-    }
-    
-    .jogador_info .posicao, 
-    .jogador_info .periodo,
-    .jogador_descricao p {
-        font-size: 1.2rem;
-    }
-    
-    .historia p,
-    .conquistas p,
-    .curiosidades p {
-        font-size: 1.2rem;
-        width: 100%;
-    }
-    
-    .img_galeria1 img, 
-    .img_galeria2 img, 
-    .img_galeria3 img {
-        height: 25vh;
-    }
-}
 
 /* Telas médias (tablets) */
 @media (max-width: 768px) {
@@ -467,7 +425,7 @@ footer p{
         text-align: center;
     }
     
-    .escudo_auckland {
+    .escudo_boca {
         width: 25vw;
     }
     
@@ -503,8 +461,8 @@ footer p{
 }
 
 /* Telas grandes (desktops) */
-@media (min-width: 992px) and (max-width: 1200px) {
-    .escudo_auckland {
+@media (max-width: 1024px) {
+    .escudo_boca {
         width: 8vw;
     }
     
@@ -514,23 +472,5 @@ footer p{
     
     .jogador_descricao {
         width: 75%;
-    }
-}
-
-/* Telas extra grandes */
-@media (min-width: 1201px) {
-    main {
-        margin: 3vh auto;
-        max-width: 1400px;
-    }
-    
-    .escudo_auckland {
-        width: 7vw;
-    }
-    
-    .img_galeria1 img, 
-    .img_galeria2 img, 
-    .img_galeria3 img {
-        height: 40vh;
     }
 }

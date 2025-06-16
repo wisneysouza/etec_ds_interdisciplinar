@@ -174,7 +174,7 @@ nav ul li a:hover{
 .nome_direita{
     margin-left: auto;
     padding: 0.5vh 1vw;
-    background-color: aquamarine;
+    text-align:center ;   
 }
 .titulo_boca h1{
     font-size: 2.5rem;
@@ -366,7 +366,7 @@ height: 1.8vw;
     height: 35vh;
     object-fit:fill;
     object-position: center;
-    border: #103f79 0.1vw 0.1vw 0.8vw 0.1vw;
+    box-shadow: #f3b229 0.1vw 0.1vw 0.8vw 0.1vw;
 }
 footer{
     width: 100%;
@@ -388,7 +388,7 @@ footer{
     margin-bottom: 1vh;
 }
 .footer-trofeu{
-    width: 5vw;
+    width: 1.5vw;
     height: auto;
     margin-bottom: 1vh;
 }
@@ -400,49 +400,6 @@ footer p{
 }
 
 /* Responsividade */
-/* Telas pequenas (smartphones) */
-@media (max-width: 576px) {
-    .inicio_boca button {
-        width: 40vw;
-        font-size: 1.5rem;
-    }
-    
-    .titulo_boca h1 {
-        font-size: 1.8rem;
-    }
-    
-    .escudo_boca {
-        width: 30vw;
-    }
-    
-    .alinhar_icones img {
-        width: 4vw;
-        height: 4vw;
-    }
-    
-    .jogador_info h5 {
-        font-size: 1.5rem;
-    }
-    
-    .jogador_info .posicao, 
-    .jogador_info .periodo,
-    .jogador_descricao p {
-        font-size: 1.2rem;
-    }
-    
-    .historia p,
-    .conquistas p,
-    .curiosidades p {
-        font-size: 1.2rem;
-        width: 100%;
-    }
-    
-    .img_galeria1 img, 
-    .img_galeria2 img, 
-    .img_galeria3 img {
-        height: 25vh;
-    }
-}
 
 /* Telas médias (tablets) */
 @media (max-width: 768px) {
@@ -493,7 +450,7 @@ footer p{
 }
 
 /* Telas grandes (desktops) */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (max-width: 1024px) {
     .escudo_boca {
         width: 8vw;
     }
@@ -507,20 +464,4 @@ footer p{
     }
 }
 
-/* Telas extra grandes */
-@media (min-width: 1201px) {
-    main {
-        margin: 3vh auto;
-        max-width: 1400px;
-    }
-    
-    .escudo_boca {
-        width: 7vw;
-    }
-    
-    .img_galeria1 img, 
-    .img_galeria2 img, 
-    .img_galeria3 img {
-        height: 40vh;
-    }
-}
+

@@ -10,15 +10,17 @@ body{
     color: #ffffff;
 }
 .espacamento{
-    margin: 30px;
+    margin: 1.875rem;
 }
-main{margin: 30px;}
+
+main{margin: 1.875rem;
+}
 
 header{
-    border: solid #d9ae53;
+    border: 0.1rem, solid #d9ae53;
     background-color: #050404;
     text-align: center;
-    padding: 5px; 
+    padding: 0.3125rem; 
 }
 
 .header-content{
@@ -26,7 +28,6 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .logo{
@@ -38,7 +39,7 @@ header{
 .logoescudo{
     width: 5vw; /*5 de vw a logo não aumenta a caixa*/
     height: 5vw; /*5 de vw a logo não aumenta a caixa*/
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .titulo{
@@ -61,13 +62,15 @@ header h1{
 }
 
 nav {
-    
     margin: 1% auto;
-    border: solid #d9ae53;
+    border: 0.1rem solid #d9ae53;
     background-color: #050404;
-    border-radius: 8px;
-    padding: 15px 0;
-    }
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.5vh;
+}
 
 nav ul {
     display: flex;
@@ -76,17 +79,23 @@ nav ul {
     list-style: none;
     flex-direction: row;
     gap: 4vw;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 nav ul li{
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+    height: 100%;
 }
 
 nav ul li img{
-    width: 30px;
+    width: 2vw;
     height: auto;
-    margin-right: 5px;
+    margin-right: 0.3125rem;
+    vertical-align: middle;
 }
 
 nav ul li a{
@@ -95,6 +104,7 @@ nav ul li a{
     text-decoration: none;
     color: #d9ae53;
     transition: color 0.3s ease-in-out;
+    line-height: 1;
 }
 
 nav ul li a:hover{
@@ -104,8 +114,8 @@ nav ul li a:hover{
 section{
     height: auto;
     margin: 1% auto;
-    border-radius: 8px;
-    border:solid #e8be50;
+    border-radius: 0.5rem;
+    border:0.1rem solid #d9ae53;
     background-color: #050404;
     color:#d9ae53;
     display: flex;
@@ -113,7 +123,7 @@ section{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 0.9375rem;
 }
 section p{
     width: 90%;
@@ -131,19 +141,19 @@ footer{
     padding: 1vh;
     margin-top: 1%;
     align-items: center;
-    border: solid #d9ae53;
+    border: 0.1rem solid #d9ae53;
     background-color: #050404;
 }
 
 .footer-content{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .footer-trofeu{
-    width: 50px;
+    width: 1.5vw;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 footer p{
@@ -152,28 +162,28 @@ footer p{
 }
 
 .integrantes{
-    width: 600px;
+    width: 31vw;
     margin: 1% auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #d9ae53;
     background-color: #050404;
     color:#ffffff;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    padding: 15px;
+    padding: 0.9375rem;
 }
 
 .integrantes p{
-    width: 525px;
+    width: 29vw;
     margin: 1% auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #d9ae53;
     background-color: #050404;
     color:#ffffff;
     text-align: center;
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 .integrantes p:hover{
@@ -188,14 +198,22 @@ footer p{
 }
 
 .space {
-    width: 300px;
+    width: 15vw;
 }
 
 .membros img {
-    width: 150px;
+    width: 8vw;
     height: auto;
-    margin-right: 5px;
-    border-radius: 50px;
+    border-radius: 2vw;
+    padding: 0.3125rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 /*Responsividade*/
 
@@ -214,12 +232,12 @@ footer p{
     }
     nav{
         height: auto;
-        padding: 10px 0;    
+        padding: 0.625rem 0;    
     }
     nav ul{
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 0.625rem;
     }
     
     .integrantes1, .integrantes2 {
@@ -240,17 +258,16 @@ footer p{
     }
 
     .membros img {
-        width: 120px;
+        width: 6.25vw;
     }
-
-
+    
 }
-@media(max-width: 1489px ){
+@media(max-width: 1489px){
     .header-content{
         flex-direction: column;
     }
     .logoescudo{
-        width: 15vw;
+        width: 5vw;
     }
     header h1{
         font-size: 1.8rem;
@@ -263,12 +280,12 @@ footer p{
     }
     nav{
         height: auto;
-        padding: 10px 0;    
+        padding: 0.625rem 0;    
     }
     nav ul{
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 0.625rem;
     }
     .janelas{
         flex-direction: column;
@@ -277,16 +294,16 @@ footer p{
 
     .formato, .prestigio, .historia{
         width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
     .balao1, .balao2{
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 
     .space {
         display: nome;
-        width: 180px;
+        width: 0,521vw;
     }
 
     .integrantes {
@@ -298,8 +315,10 @@ footer p{
     }
 
     .membros img {
-        width: 120px;
+        width: 6.25vw;
     }
+    .footer-trofeu{
+    width: 3vw;
 }
 
 @media(max-width: 480px){
@@ -318,16 +337,16 @@ footer p{
 
     .integrantes {
         width: 95%;
-        padding: 10px;
+        padding: 0.625rem;
     }
 
     .integrantes p {
         font-size: 0.9rem;
-        padding: 6px;
+        padding: 0.375rem;
     }
 
     .membros img {
-        width: 100px;
+        width: 20vw;
     }
 
     nav ul li a {
@@ -358,6 +377,12 @@ footer p{
     }
 
     .membros img {
-        width: 120px;
+        width: 15vw;
     }
+}
+    @media(max-width: 1132px){
+    .space {
+        width: 15vw;
+    }
+}
 }

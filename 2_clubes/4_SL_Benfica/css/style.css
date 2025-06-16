@@ -128,8 +128,12 @@ nav ul li a:hover{
     justify-content: space-between;
     padding: 0px;
     width: 100%;
+    flex: 3;
 }
 
+.button_h1_table{
+    flex: 1;
+}
 .button_h1 a{
     text-decoration: none;
     color: #12814b;
@@ -170,7 +174,7 @@ nav ul li a:hover{
 .nome_direita{
     margin-left: auto;
     padding: 0.5vh 1vw;
-    background-color: aquamarine;
+    text-align: center;
 }
 .titulo_benfica h1{
     font-size: 2.5rem;
@@ -182,7 +186,6 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-  
     margin: 2vh 0;
 }
 .escudo_benfica{
@@ -395,49 +398,6 @@ footer p{
 }
 
 /* Responsividade */
-/* Telas pequenas (smartphones) */
-@media (max-width: 576px) {
-    .inicio_benfica button {
-        width: 40vw;
-        font-size: 1.5rem;
-    }
-    
-    .titulo_benfica h1 {
-        font-size: 1.8rem;
-    }
-    
-    .escudo_benfica {
-        width: 30vw;
-    }
-    
-    .alinhar_icones img {
-        width: 4vw;
-        height: 4vw;
-    }
-    
-    .jogador_info h5 {
-        font-size: 1.5rem;
-    }
-    
-    .jogador_info .posicao, 
-    .jogador_info .periodo,
-    .jogador_descricao p {
-        font-size: 1.2rem;
-    }
-    
-    .historia p,
-    .conquistas p,
-    .curiosidades p {
-        font-size: 1.2rem;
-        width: 100%;
-    }
-    
-    .img_galeria1 img, 
-    .img_galeria2 img, 
-    .img_galeria3 img {
-        height: 25vh;
-    }
-}
 
 /* Telas médias (tablets) */
 @media (max-width: 768px) {
@@ -452,7 +412,7 @@ footer p{
         text-align: center;
     }
     
-    .escudo_benfica {
+    .escudo_boca {
         width: 25vw;
     }
     
@@ -488,8 +448,8 @@ footer p{
 }
 
 /* Telas grandes (desktops) */
-@media (min-width: 992px) and (max-width: 1200px) {
-    .escudo_benfica {
+@media (max-width: 1024px) {
+    .escudo_boca {
         width: 8vw;
     }
     
@@ -499,23 +459,5 @@ footer p{
     
     .jogador_descricao {
         width: 75%;
-    }
-}
-
-/* Telas extra grandes */
-@media (min-width: 1201px) {
-    main {
-        margin: 3vh auto;
-        max-width: 1400px;
-    }
-    
-    .escudo_benfica {
-        width: 7vw;
-    }
-    
-    .img_galeria1 img, 
-    .img_galeria2 img, 
-    .img_galeria3 img {
-        height: 40vh;
     }
 }

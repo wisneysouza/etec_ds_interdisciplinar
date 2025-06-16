@@ -10,15 +10,17 @@ body{
     color: #ffffff;
 }
 .espacamento{
-    margin: 30px;
+    margin: 1.875rem;
 }
-main{margin: 30px;}
+main{
+    margin: 1.875rem;
+}
 
 header{
-    border: solid #d9ae53;
+    border: 0.1rem solid #d9ae53;
     background-color: #050404;
     text-align: center;
-    padding: 5px; 
+    padding: 0.3125rem; 
 }
 
 .header-content{
@@ -26,7 +28,6 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .logo{
@@ -36,9 +37,9 @@ header{
 }
 
 .logoescudo{
-    width: 7vw;
-    height: auto;
-    margin-right: 10px;
+    width: 5vw; /*5 de vw a logo não aumenta a caixa*/
+    height: 5vw; /*5 de vw a logo não aumenta a caixa*/
+    margin-right: 0.625rem;
 }
 
 .titulo{
@@ -61,13 +62,15 @@ header h1{
 }
 
 nav {
-    
     margin: 1% auto;
-    border: solid #d9ae53;
+    border: 0.1rem solid #d9ae53;
     background-color: #050404;
-    border-radius: 8px;
-    padding: 15px 0;
-    }
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.5vh;
+}
 
 nav ul {
     display: flex;
@@ -76,25 +79,32 @@ nav ul {
     list-style: none;
     flex-direction: row;
     gap: 4vw;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 nav ul li{
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+    height: 100%;
 }
 
 nav ul li img{
-    width: 30px;
+    width: 2vw;
     height: auto;
-    margin-right: 5px;
+    margin-right: 0.3125rem;
+    vertical-align: middle;
 }
 
 nav ul li a{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
     color: #d9ae53;
     transition: color 0.3s ease-in-out;
+    line-height: 1;
 }
 
 nav ul li a:hover{
@@ -104,23 +114,22 @@ nav ul li a:hover{
 section{
     height: auto;
     margin: 1% auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
+    border-radius: 0.5rem;
+    border:0.1rem solid #d9ae53;
     background-color: #050404;
     color:#d9ae53;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
+    text-align: left;
+    padding: 0.9375rem;
 }
 
 .compromisso{
     height: auto;
     margin: 1% auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
+    border-radius: 0.5rem;
+    border:0.1rem solid #d9ae53;
     background-color: #050404;
     color:#ffffff;
     display: flex;
@@ -128,23 +137,67 @@ section{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 0.9375rem;
 }
 
 .compromisso h2{
     color:#d9ae53;
+    font-size: 2rem;
+}
+
+.alinhamento_norma, .alinhamento_privacidade, .alinhamento_responsabilidade{
+    display: flex;
+    flex-direction: row;
+    gap: 0.625rem;
+}
+
+.alinhamento_coracao{
+    display: flex;
+    flex-direction: row;
+    gap: 0.625rem;
+    text-align: left;
+}
+
+.alinhamento_responsabilidade img{
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-left: 2rem;
+}
+
+.alinhamento_coracao img{
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-left: 2rem;
+}
+
+.alinhamento_privacidade img{
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-left: 2rem;
+}
+
+.alinhamento_norma img{
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-left: 2rem;
 }
 
 .titulo_caixa_mae_normas {
     width: 100%;
     text-align: left;
     align-items: flex-start;
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 .titulo_caixa_mae_normas p {
     color: #ffffff;
+    margin-left: 0.9375rem;
+}
+
+.livro{
+    width: 3.125rem;
+    height: auto;
+    margin-bottom: 0.625rem;
 }
 
 .caixas_conduta{
@@ -155,103 +208,122 @@ section{
     flex-direction: row;
     align-items: center;
     text-align: center;
-    gap: 50px;
+    gap: 2rem;
 }
 
 .box_normas{
-    height: 180px;
-    width: 455px;
+    height: 18vh;
+    width: 25vw;
     margin: 1% auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
+    border-radius: 0.5rem;
+    border:0.1rem solid #d9ae53;
     background-color: #050404;
     color:#ffffff;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     text-align: left;
-    padding: 15px;
+    padding: 0.9375rem;
 }
 
 .box_normas h2{
     color:#d9ae53;
     display: flex;
     justify-content: center;
+    font-size: 1.75rem;
 }
 
 .titulo_caixa_mae_privacidade {
+    width: 100%;
     text-align: left;
     align-items: flex-start;
-    margin: 20px;
-    margin-left: 10px;
+    
+}
+.escudo{
+    width: 2.604vw;
+    height: auto;
+    margin-bottom: 0.625rem;
 }
 
 .titulo_caixa_mae_privacidade p {
     color: #ffffff;
+    margin-left: 2.8125rem;
 }
 
 .caixas_privacidade{
     background-color: #050404;
-    color:#d9ae53;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap:10px;
+    gap: 1.5rem;
 }
 
 .box_privacidade{
-    width: 1450px;
-    margin: 1% auto;
-    border-radius: 8px;
-    border:solid #d9ae53;
+    border-radius: 0.5rem;
+    border:0.1rem solid #d9ae53;
     background-color: #050404;
     color:#ffffff;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
+}
+
+.box_privacidade p{
+    display: flex;
     text-align: left;
-    padding: 10px;
 }
 
 .box_privacidade h2{
     color:#d9ae53;
     display: flex;
     justify-content: left;
+    font-size: 1.75rem;
+}
+
+.reciclagem{ 
+    width: 2.604vw;
+    height: auto;
+    margin-bottom: 0.625rem;
 }
 
 .titulo_caixa_mae_responsabilidade {
     text-align: left;
     align-items: flex-start;
-    margin-bottom: 20px;
-    margin: 0px;
+    margin-bottom: 1.25rem;
 }
 
 .titulo_caixa_mae_responsabilidade p{
     color: #ffffff;
+    margin-left: 2.5rem;
 }
 
 .responsabilidade {
     flex: 1;
-    min-width: 300px;
+    min-width: 1.563vw;
+    margin-right: 0.625rem;
+}
+
+.iniciativas{
+    margin-left: 2.5rem;
 }
 
 .box_responsabilidade {
     margin: 5% ;
-    border-radius: 8px;
-    border:solid #d9ae53;
+    border-radius: 0.5rem;
+    border:0.1rem solid #d9ae53;
     background-color: #050404;
     color:#ffffff;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     text-align: left;
-    padding: 15px;
+    padding: 0.9375rem;
+    font-size: 1.5rem;
 }
 
 .box_responsabilidade h3{
     color: #d9ae53;
+    margin-left: 2.5rem;
+    font-size: 1.75rem;
 }
 
 .coluna_dupla {
@@ -261,23 +333,31 @@ section{
 
 }
 
+.coracao{
+    width: 2.604vw;
+    height: auto;
+    margin-bottom: 0.625rem;
+}
+
 .finalizacao {
-    margin: 10px;  
-    border-radius: 8px;
-    border:solid #d9ae53;
+    margin: 0.625rem;  
+    border-radius: 0.5rem;
+    border:0.1rem solid #d9ae53;
     background-color: #050404;
     color:#ffffff;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    align-items: left;
     text-align: left;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .finalizacao h2{
     color:#d9ae53;
     display: flex;
     justify-content: left;
+    font-size: 2rem;
 }
 
 
@@ -291,24 +371,33 @@ footer{
     padding: 1vh;
     margin-top: 1%;
     align-items: center;
-    border: solid #d9ae53;
+    border: 0.1rem solid #d9ae53;
     background-color: #050404;
 }
 
 .footer-content{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
+
 .footer-trofeu{
-    width: 50px;
+    width: 1.5vw;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 footer p{
     color: #ffffff;
     text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 /*Responsividade*/
@@ -331,12 +420,12 @@ footer p{
     }
     nav{
         height: auto;
-        padding: 10px 0;    
+        padding: 0.625rem 0;    
     }
     nav ul{
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 0.625rem;
     }
     .janelas{
         flex-direction: column;
@@ -345,11 +434,13 @@ footer p{
 
     .formato, .prestigio, .historia{
         width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
 }
+
 @media(max-width: 1489px ){
+
     .header-content{
         flex-direction: column;
     }
@@ -367,12 +458,12 @@ footer p{
     }
     nav{
         height: auto;
-        padding: 10px 0;    
+        padding: 0.625rem 0;    
     }
     nav ul{
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 0.625rem;
     }
     .janelas{
         flex-direction: column;
@@ -381,12 +472,288 @@ footer p{
 
     .formato, .prestigio, .historia{
         width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
     .balao1, .balao2{
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .titulo_caixa_mae_normas,
+    .titulo_caixa_mae_privacidade,
+    .titulo_caixa_mae_responsabilidade {
+        text-align: center;
+        margin: 0.625rem auto;
     }
 
+    .box_responsabilidade {
+        width: 95%;
+        margin: 0.625rem auto;
+    }
 
+    .finalizacao {
+        width: 90%;
+    }
+
+    section, .compromisso {
+        padding: 0.625rem;
+    }
+
+    .logoescudo {
+        width: 20vw;
+    }
+
+    .caixas_conduta {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+    }
+
+    .caixa_conduta {
+        width: 90%;
+    }
+
+    .titulo_caixa_mae_normas {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 344px) {
+    .titulo_caixa_mae_responsabilidade {
+        text-align: center;
+        margin: 0.625rem auto;
+        height: auto;
+        width: 95%;
+    }
+
+    .box_responsabilidade {
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    .finalizacao {
+        width: 80%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .caixas_conduta {
+        justify-content: center;
+        gap: 1.875rem;
+    }
+    .box_normas {
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+}
+
+@media (max-width: 853px) {
+    .caixas_conduta {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .caixa_conduta {
+        width: 100%;
+    }
+
+    .titulo_caixa_mae_normas {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .caixa_conduta {
+        padding: 0.9375rem;
+        font-size: 0.95rem;
+    }
+
+    .titulo_caixa_mae_normas {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .caixas_privacidade {
+        flex-direction: column;
+        justify-content: flex-start;
+        display: flex;
+        text-align: left;
+    }
+
+    .box_privacidade {
+        width: 90%; 
+        margin: auto;
+        height: auto;
+        text-align: center;
+        padding: 0.625rem;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .caixas_privacidade {
+        flex-direction: column; 
+    }
+
+    .box_privacidade {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        text-align: center;
+        padding: 0.625rem;
+    }
+}
+
+
+@media (max-width: 1535px) {
+    .box_privacidade {
+        text-align: center;
+        margin: 0.625rem auto;
+        height: auto;
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .header-content{
+        flex-direction: column;
+    }
+    .logoescudo{
+        width: 15vw;
+    }
+    header h1{
+        font-size: 1.8rem;
+    }
+
+    main {
+        margin: 0.9375rem;
+    }
+
+    .caixas_conduta,
+    .caixas_privacidade,
+    .coluna_dupla {
+        flex-direction: column;
+        gap: 1rem;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box_normas,
+    .box_privacidade,
+    .responsabilidade {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .responsabilidade{
+        flex-direction: column;
+    }
+    
+    .box_responsabilidade {
+        width: 45vw;
+        font-size: 1rem;
+        margin: 0.625rem auto;
+        text-align: left;
+    }
+    
+    .box_privacidade h2,
+    .box_responsabilidade h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .titulo_caixa_mae_normas,
+    .titulo_caixa_mae_privacidade,
+    .titulo_caixa_mae_responsabilidade,
+    .finalizacao {
+        width: 100%;
+        text-align: center;
+        margin: 0.625rem auto;
+        padding: 0.625rem;
+        
+    }
+
+    .alinhamento_norma,
+    .alinhamento_privacidade,
+    .alinhamento_responsabilidade,
+    .alinhamento_coracao {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.625rem;
+    }
+
+    .titulo_caixa_mae_responsabilidade p,
+    .titulo_caixa_mae_normas p,
+    .titulo_caixa_mae_privacidade p {
+        margin-left: 0.625rem;
+        text-align: left;
+    }
+
+    .coluna_dupla {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row; /* <-- importante */
+}
+
+    .alinhamento_norma img,
+    .alinhamento_privacidade img,
+    .alinhamento_responsabilidade img,
+    .alinhamento_coracao img {
+        margin-left: 0;
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .iniciativas {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .finalizacao h2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    header h1,
+    .mundial {
+        width: 90%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .logoescudo {
+        width: 25vw;
+        height: auto;
+    }
+    .footer-trofeu{
+    width: 5vw;
+}
+
+@media (max-width: 1024px) {
+    .caixas_conduta {
+        width: 50vw;
+    }
+}
 }
