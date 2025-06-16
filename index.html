@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+        crossorigin="anonymous"
+    />
+    </head>
+    <body>
+    <div id="header"></div>
+    <!-- Inclusão do header e nav -->
+    <main>
+        <section>
+        <h2>Bem-vindos ao Coração do Futebol Mundial!</h2>
+        <p>
+            Este projeto propõe uma análise da trajetória da competição, com foco
+            nos clubes participantes, jogadores de destaque e conquistas que
+            marcaram o futebol internacional. A abordagem busca considerar também
+            os contextos sociais e culturais que influenciaram seu
+            desenvolvimento, oferecendo uma visão crítica e abrangente do universo
+            do futebol.
+        </p>
+        </section>
+        <article class="inicio">
+        <h1>Descobrindo o Mundial de Clubes da FIFA</h1>
+        <p>
+            Embarque conosco na fascinante jornada pelo Mundial de Clubes da FIFA.
+            Descubra sua história, o formato emocionante da competição e os clubes
+            que fazem parte deste estudo aprofundado. Uma visão completa do
+            futebol global espera por você!
+        </p>
+        </article>
+        <article class="janelas">
+        <div class="formato">
+            <div class="formato-titulo">
+            <img src="./img/globo.png" alt="icone de um globo" />
+            <h2>Formato Global</h2>
+            </div>
+            <p>
+            A partir de 2025, o Mundial de Clubes terá um novo formato com 32 equipes, realizando-se a cada 4 anos, tornando-se ainda mais prestigioso e competitivo.
+            </p>
+            <section class="baloes">
+            <div class="balao1">
+                <h4>32</h4>
+                <p>Clubes Participantes</p>
+            </div>
+            <div class="balao2">
+                <h4>4</h4>
+                <p>Anos de Intervalo</p>
+            </div>
+            </section>
+        </div>
+        <div class="prestigio">
+            <div class="prestigio-titulo">
+            <img src="./img/estrela.png" alt="icone de uma estrela" />
+            <h2>Prestígio Mundial</h2>
+            </div>
+            <p>
+            O título de campeão mundial de clubes é considerado um dos mais prestigiados e cobiçados, reunindo estrelas e equipes de elite do esporte. Essa competição, que reúne os campeões das principais ligas e continentes, é um verdadeiro palco de disputas intensas e partidas memoráveis.
+            </p>
+        </div>
+        </article>
+        <article class="historia">
+        <div class="historia-titulo">
+            <img src="./img/trofeu.png" alt="icone do globo" />
+            <h2>História da Competição</h2>
+        </div>
+        <p>
+            A Copa do Mundo de Clubes da FIFA (2000-2023) foi a principal
+            competição anual da FIFA para coroar o campeão mundial de clubes,
+            reunindo os vencedores das seis confederações continentais e um
+            representante do país-sede em seu formato mais conhecido (2005-2023).
+            Sua precursora direta é a Copa Intercontinental (1960-2004, entre
+            campeões da CONMEBOL e UEFA), cujos vencedores são reconhecidos pela
+            FIFA como campeões mundiais. Outras competições como a Copa Rio 1951
+            (vencida pelo Palmeiras) tiveram reconhecimento de status mundial pela
+            FIFA em determinado momento, mas o tema ainda gera debate. A primeira
+            edição organizada pela FIFA ocorreu em 2000 no Brasil (Corinthians
+            campeão), mas o torneio foi interrompido até 2005, quando foi
+            relançado no Japão, substituindo a Intercontinental e consolidando seu
+            formato. Ao longo de 20 edições, houve 16 títulos de clubes europeus
+            (Real Madrid é o maior vencedor) e 4 de clubes brasileiros
+            (Corinthians 2x, São Paulo e Internacional). Após 2023, o formato
+            anual foi substituído pela Copa Intercontinental da FIFA e por um novo
+            Mundial de Clubes quadrienal com 32 times, a partir de 2025.
+        </p>
+        </article>
+    </main>
+    <div id="footer"></div>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"
+    ></script>
+    <script src="./js/inicio.js"></script>
+    <script>
+    // Usando fetch() para importar o header.html
+    fetch('../header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('header').innerHTML = data;
+        });
+    fetch('../footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('footer').innerHTML = data;
+    });
+    </script>
+    </body>
+</html>

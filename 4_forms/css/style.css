@@ -1,0 +1,524 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #141414 !important;
+    color: #ffffff;
+}
+.espacamento{
+    margin: 30px;
+}
+main{margin: 30px;}
+
+header{
+    border: solid #d9ae53 1px;
+    background-color: #050404;
+    text-align: center;
+    padding: 5px; 
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5vh;
+}
+
+.logoescudo{
+    width: 7vw;
+    height: auto;
+    margin-right: 10px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: #d9ae53;
+}
+
+.mundial {
+    color: #ffffff; /* Ajuste da cor para branco */
+    font-size: 2rem;
+}
+
+nav {
+    
+    margin: 1% auto;
+    border: solid #d9ae53 1px;
+    background-color: #050404;
+    border-radius: 8px;
+    padding: 15px 0;
+    }
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-direction: row;
+    gap: 4vw;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li img{
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
+nav ul li a{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #d9ae53;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    color:#f3b229 ;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container p {
+    font-size: 24px;
+}
+
+.suavoz {
+    width: 97.5%;
+    height: auto;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* Centralizado verticalmente */
+    font-size: 0.7rem;
+    border-radius: 8px;
+    border: 0.1vh solid #e8be50;
+    background-color: #050404;
+    padding: 20px;
+    /* Espaçamento interno */
+    margin-bottom: 2px;
+    /* Espaçamento inferior */
+    margin-top: 20px;
+    /* Espaçamento inferior */
+}
+
+.suavoz h1 {
+    color: #d9ae53;
+    font-size: 2.5rem;
+    /* tamanho da fonte ajustado */
+    margin-bottom: 10px;
+}
+
+.suavoz p {
+    font-size: 1.2rem;
+    /* tamanho da fonte ajustado */
+    line-height: 1.5;
+    /* espaçamento entre linhas */
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    width: 97.5%;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.sugestao,
+.contato {
+    flex: 1;
+    background-color: #0a0a0a;
+    border: 0.1vh solid #e8be50;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario,
+.sugestao,
+.contato {
+    transition: all 0.3s ease;
+}
+
+.sugestao_titulo,
+.contato_titulo {
+    color: #d9ae53;
+    display: flex;
+    align-items: center;
+    /* centraliza vertical */
+    justify-content: center;
+    /* centraliza horizontal */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contato_titulo img,
+.sugestao_titulo img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin: 0;
+}
+
+.sugestao p,
+.contato p {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.sugestao_titulo h2,
+.contato_titulo h2 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.sugestao form div,
+.contato form div {
+    margin-bottom: 15px;
+}
+
+.sugestao label,
+.contato label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+.sugestao input[type="text"],
+.sugestao input[type="email"],
+.sugestao textarea,
+.contato input[type="text"],
+.contato input[type="email"],
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 0.1vh solid #141414;
+    border-radius: 8px;
+    background-color: #050404;
+    color: white;
+    font-size: 1rem;
+}
+
+.sugestao textarea,
+.contato textarea {
+    resize: none;
+    width: 100%; /* largura  */
+    height: 125px; /* altura */
+    overflow-y: auto; /* adiciona scroll vertical se necessário */
+}
+
+.sugestao input::placeholder,
+.sugestao textarea::placeholder,
+.contato input::placeholder,
+.contato textarea::placeholder {
+    color: #aaa;
+}
+
+.sugestao button[type="submit"],
+.contato button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #d9ae53;
+    /* cor do botão */
+    color: #ffffff;
+    /* cor do texto do botão */
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    /* espaçamento superior para o botão */
+    text-align: center;
+}
+
+.sugestao button[type="submit"]:hover,
+.contato button[type="submit"]:hover {
+    background-color: #f3b229;
+    /* cor do botão ao passar o mouse */
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    color: #d9ae53;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vh;
+    margin-top: 1%;
+    align-items: center;
+    border: 0.1vh solid #d9ae53;
+    background-color: #050404;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.footer-trofeu{
+    width: 1.5vw;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer p{
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .formulario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sugestao,
+    .contato {
+        width: 100%;
+        max-width: 90vw;
+    }
+
+    .sugestao_titulo,
+    .contato_titulo {
+        flex-direction: column;
+        gap: 2vh;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 2vh;
+        padding: 0;
+    }
+
+    nav {
+        height: auto;
+        padding: 3vh 2vw;
+        flex-direction: column;
+        font-size: 3vw;
+    }
+
+    .suavoz {
+        font-size: 2.5vw;
+        padding: 3vh;
+    }
+
+    .suavoz h1 {
+        font-size: 4vw;
+    }
+
+    .suavoz p {
+        font-size: 3vw;
+    }
+
+    .sugestao label,
+    .contato label {
+        font-size: 2.5vw;
+    }
+
+    .sugestao input,
+    .contato input,
+    .sugestao textarea,
+    .contato textarea {
+        font-size: 2.5vw;
+    }
+
+    .sugestao button[type="submit"],
+    .contato button[type="submit"] {
+        font-size: 2.8vw;
+        padding: 2vh;
+    }
+
+    footer {
+        font-size: 2.5vw;
+        padding: 2vh;
+    }
+
+    .footer-trofeu {
+        width: 1.5vw;
+    }
+}
+
+/* tablets maiores */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .formulario {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2vw;
+    }
+
+    .sugestao,
+    .contato {
+        width: 48%;
+        max-width: none;
+    }
+
+    .sugestao_titulo,
+    .contato_titulo {
+        flex-direction: row;
+        gap: 1vw;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 3vw;
+        padding: 0;
+    }
+
+    nav {
+        height: 6vh;
+        padding: 2vh 5vw;
+        flex-direction: row;
+        font-size: 1.6vw;
+    }
+
+    .suavoz {
+        font-size: 1.8vw;
+        padding: 2vh 3vw;
+    }
+
+    .suavoz h1 {
+        font-size: 2.5vw;
+    }
+
+    .suavoz p {
+        font-size: 1.6vw;
+    }
+
+    .sugestao label,
+    .contato label {
+        font-size: 1.3vw;
+    }
+
+    .sugestao input,
+    .contato input,
+    .sugestao textarea,
+    .contato textarea {
+        font-size: 1.3vw;
+    }
+
+    .sugestao button[type="submit"],
+    .contato button[type="submit"] {
+        font-size: 1.5vw;
+        padding: 1.5vh 0;
+    }
+
+    footer {
+        font-size: 1.3vw;
+        padding: 1.5vh 2vw;
+    }
+
+    .footer-trofeu {
+        width: 1.5vw;
+    }
+}
+
+/* desktops menores */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .formulario {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3vw;
+    }
+
+    .sugestao,
+    .contato {
+        width: 48.5%;
+        max-width: none;
+    }
+
+    .sugestao_titulo,
+    .contato_titulo {
+        flex-direction: row;
+        gap: 1vw;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 4vw;
+        padding: 0;
+    }
+
+    nav {
+        height: 6vh;
+        padding: 2vh 6vw;
+        flex-direction: row;
+        font-size: 1.3vw;
+    }
+
+    .suavoz {
+        font-size: 1.4vw;
+        padding: 2vh 4vw;
+    }
+
+    .suavoz h1 {
+        font-size: 2vw;
+    }
+
+    .suavoz p {
+        font-size: 1.2vw;
+    }
+
+    .sugestao label,
+    .contato label {
+        font-size: 1.1vw;
+    }
+
+    .sugestao input,
+    .contato input,
+    .sugestao textarea,
+    .contato textarea {
+        font-size: 1.1vw;
+    }
+
+    .sugestao button[type="submit"],
+    .contato button[type="submit"] {
+        font-size: 1.3vw;
+        padding: 1vh 0;
+    }
+
+    footer {
+        font-size: 1.1vw;
+        padding: 1.5vh 2vw;
+    }
+
+    .footer-trofeu {
+        width: 1.5vw;
+    }
+}

@@ -1,0 +1,392 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #141414 !important;
+    color: #ffffff;
+}
+.espacamento{
+    margin: 30px;
+}
+main{margin: 30px;}
+
+header{
+    border: solid #d9ae53;
+    background-color: #050404;
+    text-align: center;
+    padding: 5px; 
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5vh;
+}
+
+.logoescudo{
+    width: 7vw;
+    height: auto;
+    margin-right: 10px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: #d9ae53;
+}
+
+.mundial {
+    color: #ffffff; /* Ajuste da cor para branco */
+    font-size: 2rem;
+}
+
+nav {
+    
+    margin: 1% auto;
+    border: solid #d9ae53;
+    background-color: #050404;
+    border-radius: 8px;
+    padding: 15px 0;
+    }
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-direction: row;
+    gap: 4vw;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li img{
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
+nav ul li a{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #d9ae53;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    color:#f3b229 ;
+}
+
+section{
+    height: auto;
+    margin: 1% auto;
+    border-radius: 8px;
+    border:solid #d9ae53;
+    background-color: #050404;
+    color:#d9ae53;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.compromisso{
+    height: auto;
+    margin: 1% auto;
+    border-radius: 8px;
+    border:solid #d9ae53;
+    background-color: #050404;
+    color:#ffffff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.compromisso h2{
+    color:#d9ae53;
+}
+
+.titulo_caixa_mae_normas {
+    width: 100%;
+    text-align: left;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.titulo_caixa_mae_normas p {
+    color: #ffffff;
+}
+
+.caixas_conduta{
+    background-color: #050404;
+    color:#d9ae53;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.box_normas{
+    height: 180px;
+    width: 455px;
+    margin: 1% auto;
+    border-radius: 8px;
+    border:solid #d9ae53;
+    background-color: #050404;
+    color:#ffffff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding: 15px;
+}
+
+.box_normas h2{
+    color:#d9ae53;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo_caixa_mae_privacidade {
+    text-align: left;
+    align-items: flex-start;
+    margin: 20px;
+    margin-left: 10px;
+}
+
+.titulo_caixa_mae_privacidade p {
+    color: #ffffff;
+}
+
+.caixas_privacidade{
+    background-color: #050404;
+    color:#d9ae53;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:10px;
+}
+
+.box_privacidade{
+    width: 1450px;
+    margin: 1% auto;
+    border-radius: 8px;
+    border:solid #d9ae53;
+    background-color: #050404;
+    color:#ffffff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+}
+
+.box_privacidade h2{
+    color:#d9ae53;
+    display: flex;
+    justify-content: left;
+}
+
+.titulo_caixa_mae_responsabilidade {
+    text-align: left;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin: 0px;
+}
+
+.titulo_caixa_mae_responsabilidade p{
+    color: #ffffff;
+}
+
+.responsabilidade {
+    flex: 1;
+    min-width: 300px;
+}
+
+.box_responsabilidade {
+    margin: 5% ;
+    border-radius: 8px;
+    border:solid #d9ae53;
+    background-color: #050404;
+    color:#ffffff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding: 15px;
+}
+
+.box_responsabilidade h3{
+    color: #d9ae53;
+}
+
+.coluna_dupla {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.finalizacao {
+    margin: 10px;  
+    border-radius: 8px;
+    border:solid #d9ae53;
+    background-color: #050404;
+    color:#ffffff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+}
+
+.finalizacao h2{
+    color:#d9ae53;
+    display: flex;
+    justify-content: left;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    color: #d9ae53;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vh;
+    margin-top: 1%;
+    align-items: center;
+    border: solid #d9ae53;
+    background-color: #050404;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.footer-trofeu{
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer p{
+    color: #ffffff;
+    text-align: center;
+}
+
+/*Responsividade*/
+
+@media(max-width: 768px){
+    .header-content{
+        flex-direction: column;
+    }
+    .logoescudo{
+        width: 15vw;
+    }
+    header h1{
+        font-size: 1.8rem;
+    }
+    .formato, .prestigio{
+        width: 45%;
+    }
+    .mundial{
+        font-size: 1.5rem;
+    }
+    nav{
+        height: auto;
+        padding: 10px 0;    
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .janelas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formato, .prestigio, .historia{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+}
+@media(max-width: 1489px ){
+    .header-content{
+        flex-direction: column;
+    }
+    .logoescudo{
+        width: 15vw;
+    }
+    header h1{
+        font-size: 1.8rem;
+    }
+    .formato, .prestigio{
+        width: 45%;
+    }
+    .mundial{
+        font-size: 1.5rem;
+    }
+    nav{
+        height: auto;
+        padding: 10px 0;    
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .janelas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formato, .prestigio, .historia{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .balao1, .balao2{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+
+}

@@ -1,0 +1,521 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #141414 !important;
+    color: #ffffff;
+}
+.espacamento{
+    margin: 3vh;
+}
+main{margin: 3vh;}
+
+header{
+    border: solid #DC052D 1px;
+    background-color: #050404;
+    text-align: center;
+    padding: 0.5vh; 
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5vh;
+}
+
+.logoescudo{
+    width: 7vw;
+    height: auto;
+    margin-right: 1vw;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: #DC052D;
+}
+
+.mundial {
+    color: #ffffff; /* Ajuste da cor para branco */
+    font-size: 2rem;
+}
+
+nav {
+    width: 100%;
+    margin: 1% auto;
+    border: solid #DC052D 1px;
+    background-color: #050404;
+    border-radius: 0.8vw;
+    padding: 1.5vh 0;
+    overflow: hidden;
+    }
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-direction: row;
+    gap: 4vw;
+    flex-wrap: wrap;
+    padding: 0 2vw;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav ul li img{
+    width: 3vw;
+    height: auto;
+    margin-right: 0.5vw;
+}
+
+nav ul li a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #DC052D;
+    transition: color 0.3s ease-in-out;
+    white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden; /* Impede que o texto transborde */
+}
+
+nav ul li a:hover{
+    color:#0066B2 ;
+}
+.inicio_bayern{
+    width: 100%;
+    height: auto;
+    border: #DC052D solid 1px;
+    background-color: #050404;
+    border-radius: 0.8vw;
+    color: #DC052D;
+    margin-top: 1%;
+    padding: 2vh;
+}
+.inicio_bayern p{
+    width: 90%;
+    color: #ffffff;
+}
+
+.button_h1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    width: 100%;
+}
+
+.button_h1 a{
+    text-decoration: none;
+    color: #DC052D;
+    font-weight: bold;
+}
+
+.inicio_bayern button{
+    color: #DC052D;
+    background-color: #141414;
+    border: solid #DC052D 1px; 
+    border-radius: 0.8vw;
+    cursor: pointer;
+    margin: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 15vw;
+    height: 5vh;
+    font-size: 2rem;
+    gap: 1vw;
+}
+.inicio_bayern button:hover{
+    background-color: #0066B2;
+    color: #DC052D;
+}
+
+.seta{
+    width: 2vw;
+    height: auto;
+    margin-right: 1vw;
+}
+
+.titulo_bayern{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.nome_direita{
+    margin-left: auto;
+    padding: 0.5vh 1vw;
+    background-color: aquamarine;
+}
+.titulo_bayern h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.escudo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2vh 0;
+}
+.escudo_bayern{
+    width: 10vw;
+    height: auto;
+}
+
+.imagens{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 2vh;
+}
+
+.alinhar_icones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    ;
+}
+
+.alinhar_icones img{
+width: 1.8vw;
+height: 1.8vw;
+}
+
+.jogadores{
+    border-radius: 0.8vw;
+    border:solid #DC052D 1px;
+    background-color: #050404;
+    color: #ffffff;
+    padding: 1.5vh;
+    margin-top: 2vh;
+    font-size: 1.5rem;
+}   
+
+
+.jogador_container {
+    display: flex;
+    margin-bottom: 2vh;
+
+    padding-bottom: 2vh;
+}
+
+.jogador_info {
+    width: 20%;
+    padding-right: 2vw;
+}
+
+.jogador_descricao {
+    width: 80%;
+}
+
+.jogador_info h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5vh;
+    color: #ffffff;
+}
+
+.jogador_info .posicao, .jogador_info .periodo {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.jogador_descricao p {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.jogadores img, .historia img, .conquistas img, .curiosidades img, .alinhar_icones_galeria img{
+    width: 1.5vw;
+    height: auto;
+    margin-right: 0.6vw;
+}
+
+.alinhar_icones_historia, .alinhar_icones_conquistas, .alinhar_icones_curiosidades, .alinhar_icones_jogadores, .alinhar_icones_galeria{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.conquistas{
+    margin: 1% auto;
+    border-radius: 0.8vw;
+    border:solid #DC052D 1px;
+    background-color: #050404;
+    color:#ffffff;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 1.5vh;;
+} 
+
+.conquistas p{
+    margin-left: 2vw;
+    font-size: 1.5rem;
+}
+.conquistas h5{
+    font-size: 1.5rem;
+}
+
+.curiosidades{
+    margin: 1% auto;
+    border-radius: 8px;
+    border:solid #DC052D  1px;
+    background-color: #050404;
+    color:#ffffff;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 1.5vh;
+}
+.curiosidades p{
+    font-size: 1.5rem;
+}
+
+.historia{
+    margin: 1% auto;
+    border-radius: 0.8vw;
+    border:solid #DC052D 1px;
+    background-color: #050404;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 1.5vh;
+}
+.historia h2, .conquistas h2, .curiosidades h2{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1vh;
+}
+.historia p{
+    color: #ffffff;
+    width: 90%;
+    text-align: left;
+    font-size: 1.5rem;
+}
+.galeria{
+    margin: 1% auto;
+    border-radius: 0.8vw;
+    border:solid #DC052D 1px;
+    background-color: #050404;
+    color:#DC052D;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5vh;
+}
+.galeria h2{
+    color: #ffffff;
+}
+
+.img_galeria1, .img_galeria2, .img_galeria3{
+    width: 100%;
+    height: 40vh;
+    border-radius: 0.8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1vw;
+    margin: 1vh 0;
+}
+.img_galeria1 img, .img_galeria2 img, .img_galeria3 img{
+    width: 30%;
+    height: 35vh;
+    object-fit:fill;
+    object-position: center;
+    box-shadow: #DC052D 0.1vw 0.1vw 0.5vw 0.05vw;
+}
+footer{
+    width: 100%;
+    height: auto;
+    color: #DC052D;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vh;
+    margin-top: 1%;
+    align-items: center;
+    border: solid #DC052D 1px;
+    background-color: #050404;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+.footer-trofeu{
+    width: 1.5vw;
+    height: auto;
+    margin-bottom: 1vh;
+}
+
+footer p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Responsividade */
+/* Telas pequenas (smartphones) */
+@media (max-width: 576px) {
+    .inicio_bayern button {
+        width: 40vw;
+        font-size: 1.5rem;
+    }
+    
+    .titulo_bayern h1 {
+        font-size: 1.8rem;
+    }
+    
+    .escudo_bayern {
+        width: 30vw;
+    }
+    
+    .alinhar_icones img {
+        width: 4vw;
+        height: 4vw;
+    }
+    
+    .jogador_info h5 {
+        font-size: 1.5rem;
+    }
+    
+    .jogador_info .posicao, 
+    .jogador_info .periodo,
+    .jogador_descricao p {
+        font-size: 1.2rem;
+    }
+    
+    .historia p,
+    .conquistas p,
+    .curiosidades p {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    
+    .img_galeria1 img, 
+    .img_galeria2 img, 
+    .img_galeria3 img {
+        height: 25vh;
+    }
+}
+
+/* Telas médias (tablets) */
+@media (max-width: 768px) {
+    .button_h1 {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .nome_direita {
+        margin: 1vh 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .escudo_bayern {
+        width: 25vw;
+    }
+    
+    .imagens {
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+    
+    .jogador_container {
+        flex-direction: column;
+    }
+    
+    .jogador_info, 
+    .jogador_descricao {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 1vh;
+    }
+    
+    .img_galeria1, 
+    .img_galeria2, 
+    .img_galeria3 {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .img_galeria1 img, 
+    .img_galeria2 img, 
+    .img_galeria3 img {
+        width: 100%;
+        margin-bottom: 1vh;
+    }
+}
+
+/* Telas grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .escudo_bayern {
+        width: 8vw;
+    }
+    
+    .jogador_info {
+        width: 25%;
+    }
+    
+    .jogador_descricao {
+        width: 75%;
+    }
+}
+
+/* Telas extra grandes */
+@media (min-width: 1201px) {
+    main {
+        margin: 3vh auto;
+        max-width: 1400px;
+    }
+    
+    .escudo_bayern {
+        width: 7vw;
+    }
+    
+    .img_galeria1 img, 
+    .img_galeria2 img, 
+    .img_galeria3 img {
+        height: 40vh;
+    }
+}
