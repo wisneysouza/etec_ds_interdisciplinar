@@ -17,11 +17,10 @@ body{
 main{margin: 3vh;}
 
 header{
-    border: solid #d9ae53; /*Todo border que estiver SOLID adicionar 1px */
+    border: solid 1px #d9ae53;
     background-color: #050404;
     text-align: center;
-    padding: 0.5vh; /* Antes estava 5px*/
-       
+    padding: 0.313rem; 
 }
 
 .header-content{
@@ -29,6 +28,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .logo{
@@ -40,7 +40,7 @@ header{
 .logoescudo{
     width: 7vw;
     height: auto;
-    margin-right: 1vw; /* Alterado: 10px → 1vw */
+    margin-right: 0.625rem;
 }
 
 .titulo{
@@ -52,34 +52,24 @@ header{
     width: 100%;
 }
 
-.tamH1{
-    font-size: 2.5vw; /* Alterado: 30px → 2.5vw */
-}
-
-.mundial_texto{
-    font-size: 1.5vw; /* Alterado: 15px → 1.5vw */
-}
-
 header h1{
-    font-size: 2,5vw; 
+    font-size: 2.5rem;
     color: #d9ae53;
 }
 
 .mundial {
     color: #ffffff; /* Ajuste da cor para branco */
     font-size: 2rem;
-    
 }
 
 nav {
-    width: 100%;
-    margin: 1vh auto; /* Antes estava 1%*/
-    border: solid #d9ae53;
+    
+    margin: 1% auto;
+    border: solid 1px #d9ae53;
     background-color: #050404;
-    border-radius: 0.8vw; /* Alterado: 8px → 0.5vw */
-    padding: 1.5vh 0; /* Alterado: 15px 0 para 2vh 0 */
-    overflow: hidden;
-    }
+    border-radius: 0.5rem;
+    padding: 0.938rem 0;
+}
 
 nav ul {
     display: flex;
@@ -88,8 +78,6 @@ nav ul {
     list-style: none;
     flex-direction: row;
     gap: 4vw;
-    flex-wrap: wrap;
-    padding: 0 2vw; /* Alterado: 20px → 2vw */
 }
 
 nav ul li{
@@ -98,9 +86,9 @@ nav ul li{
 }
 
 nav ul li img{
-    width: 3vw; 
+    width: 1.875rem;
     height: auto;
-    margin-right: 0.5vw; /* Alterado: 5px → 0.5vw */
+    margin-right: 0.313rem;
 }
 
 nav ul li a{
@@ -109,8 +97,6 @@ nav ul li a{
     text-decoration: none;
     color: #d9ae53;
     transition: color 0.3s ease-in-out;
-    white-space: nowrap; /* Impede quebra de linha */
-    overflow: hidden; /* Impede que o texto transborde */
 }
 
 nav ul li a:hover{
@@ -118,7 +104,7 @@ nav ul li a:hover{
 }
 
 .mergulho, .encontrar {
-    border: solid #d9ae53;
+    border: solid 1px #d9ae53;
     background-color: #050404;
     text-align: center;
     padding: 2vh; /* Alterado: 15px → 2vh */
@@ -153,7 +139,7 @@ nav ul li a:hover{
 }
 .club-card{
     width: 49.21%;
-    border: solid #d9ae53;
+    border: solid 1px #d9ae53;
     border-radius: 0.5vw; /* Alterado: 8px → 0.5vw */
     background-color: #050404;
     color: #ffffff;
@@ -173,7 +159,7 @@ nav ul li a:hover{
 .club-card h5{
     margin-bottom: 1.5vh; /* Alterado: 15px → 1.5vh */
     margin-right: 3%;
-    border: solid #d9ae53;
+    border: solid 1px #d9ae53;
     border-radius: 0.5vw;  /* Alterado: 8px → 0.5vw */
     padding:  0.5vh 1vw; /* Alterado: 5px 10px → 0.5vh 1vw */
 }
@@ -214,7 +200,7 @@ nav ul li a:hover{
 .club-card button{
     width: 100%;
     margin-top: auto;
-    border: solid #d9ae53;
+    border: solid 1px #d9ae53;
     border-radius: 0.5vw; /* Alterado: 8px → 0.5vw */
     background-color: #050404;
     color: #ffffff;
@@ -292,7 +278,7 @@ footer{
     padding: 1vh;
     margin-top: 1vh; /* Alterado: 1% → 1vh */
     align-items: center;
-    border: solid #d9ae53;
+    border: solid 1px #d9ae53;
     background-color: #050404;
 }
 

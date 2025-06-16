@@ -17,10 +17,10 @@ main{margin: 1.875rem;
 }
 
 header{
-    border: 0.1rem, solid #d9ae53;
+    border: solid 1px #d9ae53;
     background-color: #050404;
     text-align: center;
-    padding: 0.3125rem; 
+    padding: 0.313rem; 
 }
 
 .header-content{
@@ -28,6 +28,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .logo{
@@ -37,8 +38,8 @@ header{
 }
 
 .logoescudo{
-    width: 5vw; /*5 de vw a logo não aumenta a caixa*/
-    height: 5vw; /*5 de vw a logo não aumenta a caixa*/
+    width: 7vw;
+    height: auto;
     margin-right: 0.625rem;
 }
 
@@ -62,14 +63,12 @@ header h1{
 }
 
 nav {
+    
     margin: 1% auto;
-    border: 0.1rem solid #d9ae53;
+    border: solid 1px #d9ae53;
     background-color: #050404;
     border-radius: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6.5vh;
+    padding: 0.938rem 0;
 }
 
 nav ul {
@@ -79,32 +78,25 @@ nav ul {
     list-style: none;
     flex-direction: row;
     gap: 4vw;
-    margin: 0;
-    padding: 0;
-    height: 100%;
 }
 
 nav ul li{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    height: 100%;
 }
 
 nav ul li img{
-    width: 2vw;
+    width: 1.875rem;
     height: auto;
-    margin-right: 0.3125rem;
-    vertical-align: middle;
+    margin-right: 0.313rem;
 }
 
 nav ul li a{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
     color: #d9ae53;
     transition: color 0.3s ease-in-out;
-    line-height: 1;
 }
 
 nav ul li a:hover{
